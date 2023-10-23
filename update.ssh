@@ -1,0 +1,19 @@
+printf "Updating the repositories \n"
+git clean -f
+git reset --hard
+git pull --rebase --force
+cd ./client
+yarn
+yarn build
+printf "\n Updating the backend part\n"
+cd ../server
+yarn
+yarn build
+printf "\n Building and copy the build\n"
+cd ..
+cp client/dist server/ -r
+printf "Restarting the server \n"
+pm2 restart phantom
+pm2 save
+printf "\nUpdate has been completed\n"
+printf "\n=====>>>>>><<<<<<<=====\n"

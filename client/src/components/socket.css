@@ -1,0 +1,20 @@
+.socket-state {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.801);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.socket-state.connected {
+    box-shadow: 0px 0px 4px 4px green;
+}
+
+.socket-state.disconnected {
+    box-shadow: 0px 0px 4px 4px red;
+}

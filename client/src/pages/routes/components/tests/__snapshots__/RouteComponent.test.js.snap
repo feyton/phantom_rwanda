@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Route Component  should render the Route component 1`] = `
+<div
+  className="w-full px-5"
+>
+  <form
+    className="p-8 shadow-main px-4 flex flex-col w-100 mx-auto"
+    onSubmit={[Function]}
+  >
+    <h1
+      className="font-bold text-xl pb-8 text-center font-raleway"
+    >
+       
+       
+    </h1>
+    <div
+      className="block mb-4 xl:flex xl:justify-center md:grid md:grid-cols-2 md:gap-2"
+    >
+      <div
+        className=""
+      >
+        <label
+          className="block text-grey-darker text-sm font-bold mb-2"
+          htmlFor="origin"
+        >
+          Origin:
+        </label>
+        <input
+          className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+          name="origin"
+          onChange={[Function]}
+          placeholder="Ex: Nyabugogo"
+          required={true}
+        />
+      </div>
+      <div>
+        <label
+          className="block text-grey-darker text-sm font-bold mb-2"
+          htmlFor="destination"
+          name="distance"
+        >
+          Destination
+        </label>
+        <input
+          className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+          name="destination"
+          onChange={[Function]}
+          placeholder="Ex: Down-Town"
+          required={true}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="h-100 w-100 p-2 m-3 "
+    >
+      <div
+        className="h-screen md:h-[60vh] w-[100%]"
+      />
+    </div>
+    <div
+      className="self-center mt-6"
+    >
+      <div>
+        <button
+          className="bg-primary text-sm text-white py-2 px-3 hover:bg-hover rounded-xl py-2 text-base md:text-sm px-5"
+          type="submit"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;

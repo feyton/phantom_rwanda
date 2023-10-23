@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrackingPage should render TrackingPage 1`] = `
+<div
+  className="flex flex-col"
+>
+  <form
+    className="fixed z-20 flex flex-col justify-center"
+    id="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="flex flex-col bg-background p-4 rounded-xl mt-2 ml-6 md:ml-10 md:items-baseline"
+    >
+      <select
+        className="rounded-xl bg-background border-primary text-sm outline-none mb-2 pl-4 md:pl-8 py-1  w-40 md:w-56 border-2"
+        id="origin"
+        name="origin"
+        placeholder="your current location"
+        type="text"
+      >
+        <option
+          id="origin-select"
+        >
+          Select route
+        </option>
+      </select>
+      <div
+        className="flex justify-center md:ml-16"
+        type="submit"
+      >
+        <div>
+          <button
+            className="bg-primary text-sm text-background py-1 rounded-xl py-2 text-base md:text-sm px-5"
+            type="submit"
+          >
+            Track
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div
+    className="flex flex-col items-center z-10"
+  >
+    <div
+      className="h-screen md:h-[88vh] w-[95vw]"
+    />
+  </div>
+</div>
+`;

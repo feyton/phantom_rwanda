@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Registration Operators Should render the Register Driver component 1`] = `
+<div>
+  Drivers
+  <span
+    className="bg-get"
+  />
+  <span
+    className="bg-create"
+  />
+  <span
+    className="bg-update"
+  />
+  <span
+    className="bg-delete"
+  />
+</div>
+`;
+
+exports[`Registration Operators Should render the driver form 1`] = `
+<div>
+  Drivers
+  <span
+    className="bg-get"
+  />
+  <span
+    className="bg-create"
+  />
+  <span
+    className="bg-update"
+  />
+  <span
+    className="bg-delete"
+  />
+</div>
+`;
+
+exports[`Registration Operators Should render the operator form 1`] = `
+<div
+  className="flex flex-row h-full w-full items-center justify-center"
+>
+  <h1
+    className="text-3xl font-bold"
+  >
+    The operators page
+  </h1>
+</div>
+`;

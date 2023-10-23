@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBar should render the SideBar component 1`] = `
+<div
+  className="relative z-10 md:z-0 h-full "
+>
+  <main
+    className="hidden md:flex lg:flex xl:flex  flex text-sm h-full "
+  >
+    <aside
+      className="border-r-2 h-full sticky top-0 px-4 min-w-fit py-8 bg-gray-100 transition-transform "
+    >
+      <h1
+        className="font-rale font-bold text-center text-3xl "
+      >
+        <a
+          className="font-bold text-primary font-raleway pb-3"
+          href="/"
+          onClick={[Function]}
+        >
+          Phantom
+        </a>
+      </h1>
+      <hr />
+      <div
+        className=" mb-6 mt-8"
+      >
+        <span
+          className="rounded-full mx-auto flex items-center justify-center h-12 w-12 mb-5"
+        >
+          <img
+            alt=""
+            className="rounded-full object-cover h-12 w-12"
+          />
+        </span>
+        <div
+          className="text-center font-black text-lg"
+        >
+          <h1
+            className="font-raleway"
+          >
+            <span
+              className="capitalize font-bold text-primary"
+            >
+              :
+               
+            </span>
+          </h1>
+        </div>
+      </div>
+      <div
+        className="font-raleway w-full"
+      >
+        <ul
+          className="mb-2"
+        >
+          <li>
+            <a
+              className="py-2 pr-10 pl-4 rounded-full font-bold my-1  hover:bg-gray-300 transition-all  cursor-pointer min-w-fit w-full flex items-center"
+              href="/dashboard/main"
+              onClick={[Function]}
+            >
+              <img
+                alt="icon"
+                className="w-6 mr-2"
+                src="dashboardIcon.png"
+              />
+              <span>
+                Dashboard
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="py-2 pr-10 pl-4 rounded-full font-bold my-1  hover:bg-gray-300 transition-all  cursor-pointer min-w-fit w-full flex items-center"
+              href="/dashboard/management"
+              onClick={[Function]}
+            >
+              <img
+                alt="icon"
+                className="w-6 mr-2"
+                src="manageIcon.png"
+              />
+              <span>
+                Management
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="py-2 pr-10 pl-4 rounded-full font-bold my-1  hover:bg-gray-300 transition-all  cursor-pointer min-w-fit w-full flex items-center"
+              href="/profile"
+              onClick={[Function]}
+            >
+              <img
+                alt="icon"
+                className="w-6 mr-2"
+                src="profileIcon.png"
+              />
+              <span>
+                Profile
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            <a
+              className="py-2 pr-10 pl-4 rounded-full font-bold my-1  hover:bg-gray-300 transition-all  cursor-pointer min-w-fit w-full flex items-center"
+              href="/dashboard/settings"
+              onClick={[Function]}
+            >
+              <img
+                alt="icon"
+                className="w-6 mr-2"
+                src="settingIcon.png"
+              />
+              <span>
+                Settings
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div>
+          <button
+            className="bg-red mt-4 px-6 py-1 hover:bg-red-600 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl m-2 "
+            onClick={[Function]}
+            type="submit"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <div
+    className="flex"
+  >
+    <button
+      className="md:hidden lg:hidden xl:hidden"
+      id="button"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="fixed top-2 left-[-10px] bg-gray-300 p-1 opacity-[0.5]"
+      >
+        <div
+          className=" ml-2 bg-black h-1 w-7 bg-primary mt-1"
+        />
+        <div
+          className=" ml-2 bg-black h-1 w-7 bg-primary mt-1"
+        />
+        <div
+          className=" ml-2 bg-black h-1 w-7 bg-primary mt-1"
+        />
+      </div>
+    </button>
+  </div>
+</div>
+`;

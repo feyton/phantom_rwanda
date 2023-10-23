@@ -1,0 +1,13 @@
+{
+    "javascript.suggest.paths": false,
+    "path-autocomplete.extensionOnImport": true,
+    "path-autocomplete.pathMappings": {
+        "@": "${folder}/src",
+        "@utils": "${folder}/src/utils",
+        "@components": "${folder}/src/components",
+        "@reducers": "${folder}/src/redux/reducers",
+        "@forms": "${folder}/src/forms",
+        "@pages": "${folder}/src/pages",
+        "@modals": "${folder}/src/Modals",
+    },
+}

@@ -1,0 +1,461 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterBus component test it should register bus to database 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="px-8 py-4 my-auto font-raleway md:py-8"
+      >
+        <form
+          class="py-8 shadow-main px-4 flex flex-col w-full md:max-w-lg md:mx-auto"
+        >
+          <h1
+            class="font-extrabold text-2xl pb-8"
+          >
+            Register Bus
+          </h1>
+          <label
+            class="font-bold mb-2"
+            for="busType"
+          >
+            Bus type
+          </label>
+          <select
+            class="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+            id="busType"
+            name="busType"
+          >
+            <option
+              hidden=""
+              value=""
+            >
+              Select bus type
+            </option>
+            <option
+              value="Coaster"
+            >
+              Coaster
+            </option>
+            <option
+              value="Minibus"
+            >
+              Minibus
+            </option>
+            <option
+              value="Big Bus"
+            >
+              Big Bus
+            </option>
+          </select>
+          <p
+            class="text-rose-500 mb-2"
+          />
+          <label
+            class="font-bold mb-2"
+            for="busType"
+          >
+            Company
+          </label>
+          <select
+            class="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+            id="company"
+            name="company"
+          >
+            <option
+              hidden=""
+              value=""
+            >
+              Select company
+            </option>
+            <option
+              value="KBS"
+            >
+              Kigali Bus Service
+            </option>
+            <option
+              value="Royal express"
+            >
+              Royal Express
+            </option>
+            <option
+              value="Virunga express"
+            >
+              Virunga Express
+            </option>
+          </select>
+          <p
+            class="text-rose-500 mb-2"
+          />
+          <label
+            class="font-bold mb-2"
+            for="seats"
+          >
+            Seats
+          </label>
+          <input
+            class="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+            name="seats"
+            placeholder="Enter number of seats"
+            type="number"
+            value=""
+          />
+          <p
+            class="text-rose-500 mb-2"
+          />
+          <label
+            class="font-bold mb-2"
+            for="seats"
+          >
+            Plate number
+          </label>
+          <input
+            class="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+            name="plateNumber"
+            placeholder="Enter plate number"
+            type="text"
+            value=""
+          />
+          <p
+            class="text-rose-500 mb-2"
+          />
+          <div
+            class="self-center"
+          >
+            <div>
+              <button
+                class="bg-primary text-sm text-white py-2 px-3 mt-4 rounded-xl py-2 text-base md:text-sm px-5"
+                type="submit"
+              >
+                Register Bus
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="px-8 py-4 my-auto font-raleway md:py-8"
+    >
+      <form
+        class="py-8 shadow-main px-4 flex flex-col w-full md:max-w-lg md:mx-auto"
+      >
+        <h1
+          class="font-extrabold text-2xl pb-8"
+        >
+          Register Bus
+        </h1>
+        <label
+          class="font-bold mb-2"
+          for="busType"
+        >
+          Bus type
+        </label>
+        <select
+          class="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+          id="busType"
+          name="busType"
+        >
+          <option
+            hidden=""
+            value=""
+          >
+            Select bus type
+          </option>
+          <option
+            value="Coaster"
+          >
+            Coaster
+          </option>
+          <option
+            value="Minibus"
+          >
+            Minibus
+          </option>
+          <option
+            value="Big Bus"
+          >
+            Big Bus
+          </option>
+        </select>
+        <p
+          class="text-rose-500 mb-2"
+        />
+        <label
+          class="font-bold mb-2"
+          for="busType"
+        >
+          Company
+        </label>
+        <select
+          class="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+          id="company"
+          name="company"
+        >
+          <option
+            hidden=""
+            value=""
+          >
+            Select company
+          </option>
+          <option
+            value="KBS"
+          >
+            Kigali Bus Service
+          </option>
+          <option
+            value="Royal express"
+          >
+            Royal Express
+          </option>
+          <option
+            value="Virunga express"
+          >
+            Virunga Express
+          </option>
+        </select>
+        <p
+          class="text-rose-500 mb-2"
+        />
+        <label
+          class="font-bold mb-2"
+          for="seats"
+        >
+          Seats
+        </label>
+        <input
+          class="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+          name="seats"
+          placeholder="Enter number of seats"
+          type="number"
+          value=""
+        />
+        <p
+          class="text-rose-500 mb-2"
+        />
+        <label
+          class="font-bold mb-2"
+          for="seats"
+        >
+          Plate number
+        </label>
+        <input
+          class="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+          name="plateNumber"
+          placeholder="Enter plate number"
+          type="text"
+          value=""
+        />
+        <p
+          class="text-rose-500 mb-2"
+        />
+        <div
+          class="self-center"
+        >
+          <div>
+            <button
+              class="bg-primary text-sm text-white py-2 px-3 mt-4 rounded-xl py-2 text-base md:text-sm px-5"
+              type="submit"
+            >
+              Register Bus
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`RegisterBus component test it should render Register bus page 1`] = `
+<div
+  className="px-8 py-4 my-auto font-raleway md:py-8"
+>
+  <form
+    className="py-8 shadow-main px-4 flex flex-col w-full md:max-w-lg md:mx-auto"
+    onSubmit={[Function]}
+  >
+    <h1
+      className="font-extrabold text-2xl pb-8"
+    >
+      Register Bus
+    </h1>
+    <label
+      className="font-bold mb-2"
+      htmlFor="busType"
+    >
+      Bus type
+    </label>
+    <select
+      className="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+      id="busType"
+      name="busType"
+      onBlur={[Function]}
+      onChange={[Function]}
+    >
+      <option
+        hidden={true}
+        value=""
+      >
+        Select bus type
+      </option>
+      <option
+        value="Coaster"
+      >
+        Coaster
+      </option>
+      <option
+        value="Minibus"
+      >
+        Minibus
+      </option>
+      <option
+        value="Big Bus"
+      >
+        Big Bus
+      </option>
+    </select>
+    <p
+      className="text-rose-500 mb-2"
+    />
+    <label
+      className="font-bold mb-2"
+      htmlFor="busType"
+    >
+      Company
+    </label>
+    <select
+      className="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+      id="company"
+      name="company"
+      onBlur={[Function]}
+      onChange={[Function]}
+    >
+      <option
+        hidden={true}
+        value=""
+      >
+        Select company
+      </option>
+      <option
+        value="KBS"
+      >
+        Kigali Bus Service
+      </option>
+      <option
+        value="Royal express"
+      >
+        Royal Express
+      </option>
+      <option
+        value="Virunga express"
+      >
+        Virunga Express
+      </option>
+    </select>
+    <p
+      className="text-rose-500 mb-2"
+    />
+    <label
+      className="font-bold mb-2"
+      htmlFor="seats"
+    >
+      Seats
+    </label>
+    <input
+      className="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+      name="seats"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="Enter number of seats"
+      type="number"
+    />
+    <p
+      className="text-rose-500 mb-2"
+    />
+    <label
+      className="font-bold mb-2"
+      htmlFor="seats"
+    >
+      Plate number
+    </label>
+    <input
+      className="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+      name="plateNumber"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="Enter plate number"
+      type="text"
+    />
+    <p
+      className="text-rose-500 mb-2"
+    />
+    <div
+      className="self-center"
+    >
+      <div>
+        <button
+          className="bg-primary text-sm text-white py-2 px-3 mt-4 rounded-xl py-2 text-base md:text-sm px-5"
+          type="submit"
+        >
+          Register Bus
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;

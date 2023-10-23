@@ -1,0 +1,885 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Management & Roles Render the management 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <main
+        class="overflow-x-auto"
+      >
+        <div
+          class="react-tabs"
+          data-rttabs="true"
+        >
+          <ul
+            class="flex border-b-2 mb-5 w-full justify-around shadow-main"
+            role="tablist"
+          >
+            
+            
+            
+            
+            
+          </ul>
+          <div
+            aria-labelledby="react-tabs-0"
+            class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+            id="react-tabs-1"
+            role="tabpanel"
+          >
+            
+          </div>
+          <div
+            aria-labelledby="react-tabs-2"
+            class="react-tabs__tab-panel"
+            id="react-tabs-3"
+            role="tabpanel"
+          />
+          <div
+            aria-labelledby="react-tabs-4"
+            class="react-tabs__tab-panel"
+            id="react-tabs-5"
+            role="tabpanel"
+          />
+          <div
+            aria-labelledby="react-tabs-6"
+            class="react-tabs__tab-panel"
+            id="react-tabs-7"
+            role="tabpanel"
+          />
+          <div
+            aria-labelledby="react-tabs-8"
+            class="react-tabs__tab-panel"
+            id="react-tabs-9"
+            role="tabpanel"
+          />
+        </div>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <main
+      class="overflow-x-auto"
+    >
+      <div
+        class="react-tabs"
+        data-rttabs="true"
+      >
+        <ul
+          class="flex border-b-2 mb-5 w-full justify-around shadow-main"
+          role="tablist"
+        >
+          
+          
+          
+          
+          
+        </ul>
+        <div
+          aria-labelledby="react-tabs-0"
+          class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+          id="react-tabs-1"
+          role="tabpanel"
+        >
+          
+        </div>
+        <div
+          aria-labelledby="react-tabs-2"
+          class="react-tabs__tab-panel"
+          id="react-tabs-3"
+          role="tabpanel"
+        />
+        <div
+          aria-labelledby="react-tabs-4"
+          class="react-tabs__tab-panel"
+          id="react-tabs-5"
+          role="tabpanel"
+        />
+        <div
+          aria-labelledby="react-tabs-6"
+          class="react-tabs__tab-panel"
+          id="react-tabs-7"
+          role="tabpanel"
+        />
+        <div
+          aria-labelledby="react-tabs-8"
+          class="react-tabs__tab-panel"
+          id="react-tabs-9"
+          role="tabpanel"
+        />
+      </div>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Management & Roles Render the role page 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="w-full h-full font-raleway px-10 pt-3"
+      >
+        <h1
+          class="text-2xl font-bold text-center justify-center font-rale"
+        >
+          Manage roles and permissions
+        </h1>
+        <div
+          class="mt-6 p-5 rounded-md shadow-main"
+        >
+          <div
+            class="w-full border rounded-sm p-2 "
+          >
+            <div>
+              <ul
+                class="grid grid-cols-[30%_60%] gap-1 border-b-2 font-raleway  font-bold py-1 px-2"
+              >
+                <li>
+                  Role
+                </li>
+                <ul
+                  class="grid grid-cols-2"
+                >
+                  <li>
+                    Resources
+                  </li>
+                  <li>
+                    Permissions
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div
+              class="border-b-2"
+            >
+              <ul
+                class="font-raleway capitalize grid grid-cols-[30%_60%] gap-1 border-b-2 py-1"
+              >
+                <li
+                  class="font-bold  text-primary"
+                >
+                  <span
+                    class="cursor-pointer"
+                  >
+                    admin
+                  </span>
+                </li>
+                <li>
+                  <ul>
+                    <div
+                      class="grid grid-cols-2 py-2 justify-center center border-b "
+                    >
+                      <li
+                        class="text-black "
+                      >
+                        driver
+                      </li>
+                      <li
+                        class="py-1 flex flex-wrap lg:inline-block"
+                      >
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          get
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          create
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          update
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          delete
+                        </span>
+                      </li>
+                    </div>
+                    <div
+                      class="grid grid-cols-2 py-2 justify-center center border-b "
+                    >
+                      <li
+                        class="text-black "
+                      >
+                        routes
+                      </li>
+                      <li
+                        class="py-1 flex flex-wrap lg:inline-block"
+                      >
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          get
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          create
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          update
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          delete
+                        </span>
+                      </li>
+                    </div>
+                    <div
+                      class="grid grid-cols-2 py-2 justify-center center border-b "
+                    >
+                      <li
+                        class="text-black "
+                      >
+                        operator
+                      </li>
+                      <li
+                        class="py-1 flex flex-wrap lg:inline-block"
+                      >
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          get
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          create
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          update
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          delete
+                        </span>
+                      </li>
+                    </div>
+                    <div
+                      class="grid grid-cols-2 py-2 justify-center center border-b "
+                    >
+                      <li
+                        class="text-black "
+                      >
+                        company
+                      </li>
+                      <li
+                        class="py-1 flex flex-wrap lg:inline-block"
+                      >
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          get
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          create
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          update
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          delete
+                        </span>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+                <li />
+              </ul>
+              <ul
+                class="font-raleway capitalize grid grid-cols-[30%_60%] gap-1 border-b-2 py-1"
+              >
+                <li
+                  class="font-bold  text-primary"
+                >
+                  <span
+                    class="cursor-pointer"
+                  >
+                    operator
+                  </span>
+                </li>
+                <li>
+                  <ul>
+                    <div
+                      class="grid grid-cols-2 py-2 justify-center center border-b "
+                    >
+                      <li
+                        class="text-black "
+                      >
+                        driver
+                      </li>
+                      <li
+                        class="py-1 flex flex-wrap lg:inline-block"
+                      >
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          get
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          create
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          update
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          delete
+                        </span>
+                      </li>
+                    </div>
+                    <div
+                      class="grid grid-cols-2 py-2 justify-center center border-b "
+                    >
+                      <li
+                        class="text-black "
+                      >
+                        routes
+                      </li>
+                      <li
+                        class="py-1 flex flex-wrap lg:inline-block"
+                      >
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          get
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          create
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          update
+                        </span>
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          delete
+                        </span>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+                <li />
+              </ul>
+              <ul
+                class="font-raleway capitalize grid grid-cols-[30%_60%] gap-1 border-b-2 py-1"
+              >
+                <li
+                  class="font-bold  text-primary"
+                >
+                  <span
+                    class="cursor-pointer"
+                  >
+                    driver
+                  </span>
+                </li>
+                <li>
+                  <ul>
+                    <div
+                      class="grid grid-cols-2 py-2 justify-center center border-b "
+                    >
+                      <li
+                        class="text-black "
+                      >
+                        driver
+                      </li>
+                      <li
+                        class="py-1 flex flex-wrap lg:inline-block"
+                      >
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          get
+                        </span>
+                      </li>
+                    </div>
+                    <div
+                      class="grid grid-cols-2 py-2 justify-center center border-b "
+                    >
+                      <li
+                        class="text-black "
+                      >
+                        routes
+                      </li>
+                      <li
+                        class="py-1 flex flex-wrap lg:inline-block"
+                      >
+                        <span
+                          class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                        >
+                          get
+                        </span>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+                <li />
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="w-full h-full font-raleway px-10 pt-3"
+    >
+      <h1
+        class="text-2xl font-bold text-center justify-center font-rale"
+      >
+        Manage roles and permissions
+      </h1>
+      <div
+        class="mt-6 p-5 rounded-md shadow-main"
+      >
+        <div
+          class="w-full border rounded-sm p-2 "
+        >
+          <div>
+            <ul
+              class="grid grid-cols-[30%_60%] gap-1 border-b-2 font-raleway  font-bold py-1 px-2"
+            >
+              <li>
+                Role
+              </li>
+              <ul
+                class="grid grid-cols-2"
+              >
+                <li>
+                  Resources
+                </li>
+                <li>
+                  Permissions
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div
+            class="border-b-2"
+          >
+            <ul
+              class="font-raleway capitalize grid grid-cols-[30%_60%] gap-1 border-b-2 py-1"
+            >
+              <li
+                class="font-bold  text-primary"
+              >
+                <span
+                  class="cursor-pointer"
+                >
+                  admin
+                </span>
+              </li>
+              <li>
+                <ul>
+                  <div
+                    class="grid grid-cols-2 py-2 justify-center center border-b "
+                  >
+                    <li
+                      class="text-black "
+                    >
+                      driver
+                    </li>
+                    <li
+                      class="py-1 flex flex-wrap lg:inline-block"
+                    >
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        get
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        create
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        update
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        delete
+                      </span>
+                    </li>
+                  </div>
+                  <div
+                    class="grid grid-cols-2 py-2 justify-center center border-b "
+                  >
+                    <li
+                      class="text-black "
+                    >
+                      routes
+                    </li>
+                    <li
+                      class="py-1 flex flex-wrap lg:inline-block"
+                    >
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        get
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        create
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        update
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        delete
+                      </span>
+                    </li>
+                  </div>
+                  <div
+                    class="grid grid-cols-2 py-2 justify-center center border-b "
+                  >
+                    <li
+                      class="text-black "
+                    >
+                      operator
+                    </li>
+                    <li
+                      class="py-1 flex flex-wrap lg:inline-block"
+                    >
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        get
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        create
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        update
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        delete
+                      </span>
+                    </li>
+                  </div>
+                  <div
+                    class="grid grid-cols-2 py-2 justify-center center border-b "
+                  >
+                    <li
+                      class="text-black "
+                    >
+                      company
+                    </li>
+                    <li
+                      class="py-1 flex flex-wrap lg:inline-block"
+                    >
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        get
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        create
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        update
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        delete
+                      </span>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li />
+            </ul>
+            <ul
+              class="font-raleway capitalize grid grid-cols-[30%_60%] gap-1 border-b-2 py-1"
+            >
+              <li
+                class="font-bold  text-primary"
+              >
+                <span
+                  class="cursor-pointer"
+                >
+                  operator
+                </span>
+              </li>
+              <li>
+                <ul>
+                  <div
+                    class="grid grid-cols-2 py-2 justify-center center border-b "
+                  >
+                    <li
+                      class="text-black "
+                    >
+                      driver
+                    </li>
+                    <li
+                      class="py-1 flex flex-wrap lg:inline-block"
+                    >
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        get
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        create
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        update
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        delete
+                      </span>
+                    </li>
+                  </div>
+                  <div
+                    class="grid grid-cols-2 py-2 justify-center center border-b "
+                  >
+                    <li
+                      class="text-black "
+                    >
+                      routes
+                    </li>
+                    <li
+                      class="py-1 flex flex-wrap lg:inline-block"
+                    >
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        get
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        create
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        update
+                      </span>
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        delete
+                      </span>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li />
+            </ul>
+            <ul
+              class="font-raleway capitalize grid grid-cols-[30%_60%] gap-1 border-b-2 py-1"
+            >
+              <li
+                class="font-bold  text-primary"
+              >
+                <span
+                  class="cursor-pointer"
+                >
+                  driver
+                </span>
+              </li>
+              <li>
+                <ul>
+                  <div
+                    class="grid grid-cols-2 py-2 justify-center center border-b "
+                  >
+                    <li
+                      class="text-black "
+                    >
+                      driver
+                    </li>
+                    <li
+                      class="py-1 flex flex-wrap lg:inline-block"
+                    >
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        get
+                      </span>
+                    </li>
+                  </div>
+                  <div
+                    class="grid grid-cols-2 py-2 justify-center center border-b "
+                  >
+                    <li
+                      class="text-black "
+                    >
+                      routes
+                    </li>
+                    <li
+                      class="py-1 flex flex-wrap lg:inline-block"
+                    >
+                      <span
+                        class="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                      >
+                        get
+                      </span>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div>
+  <section
+    className="flex justify-between content-center pb-7 font-raleway"
+  >
+    <div>
+      <input
+        className="p-1 rounded-md border-2"
+        name="search"
+        onChange={[Function]}
+        placeholder="Search routes..."
+        type="text"
+        value=""
+      />
+    </div>
+    
+  </section>
+  <table
+    className="w-full"
+    role="table"
+  >
+    <thead>
+      <tr
+        className="pb-10 "
+        role="row"
+      >
+        <th
+          className="text-left font-extrabold pr-5 border-b-2 pb-4 font-raleway"
+          colSpan={1}
+          role="columnheader"
+        >
+          Destination 1
+        </th>
+        <th
+          className="text-left font-extrabold pr-5 border-b-2 pb-4 font-raleway"
+          colSpan={1}
+          role="columnheader"
+        >
+          Destination 2
+        </th>
+        <th
+          className="text-left font-extrabold pr-5 border-b-2 pb-4 font-raleway"
+          colSpan={1}
+          role="columnheader"
+        >
+          Distance
+        </th>
+        <th
+          className="text-left font-extrabold pr-5 border-b-2 pb-4 font-raleway"
+          colSpan={1}
+          role="columnheader"
+        >
+          Management
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      role="rowgroup"
+    />
+  </table>
+</div>
+`;

@@ -1,0 +1,504 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound It renders without 1`] = `
+<div
+  className="flex items-center flex-col justify-center h-screen"
+>
+  <h1
+    className="text-bold text-3xl font-rale"
+  >
+    Oops. Page Not Found
+  </h1>
+  <a
+    className="py-1 px-2 bg-primary hover:bg-hover font-bold rounded-md my-3 text-white"
+    href="/"
+    onClick={[Function]}
+  >
+    Back Home
+  </a>
+</div>
+`;
+
+exports[`Reset password layout should render all routes 1`] = `
+<div
+  className="min-h-[75vh] h-full flex flex-col pb-40 md:pb-2 relative py-4 md:flex-row items-center justify-center"
+>
+  <div
+    className="max-w-sm mr-10 mt-[-60px] md:flex md:items-center md:justify-center md:mx-auto md:my-[auto] xl:ml-64"
+  >
+    <img
+      alt="placeholder-img"
+      className="w-full object-cover"
+      src="https://res.cloudinary.com/feyton/image/upload/v1645616111/Codebandits/Phantom_icon_1_tpjkws.png"
+    />
+  </div>
+  <div
+    className="flex flex-col  py-3 px-4 w-72 md:w-80 md:min-w-[300px] md:max-w-sm shadow-main absolute bg-white top-16 md:top-0 md:mx-auto md:relative rounded-lg xl:mr-64"
+  >
+    <div
+      className="w-fit flex flex-col justify-center items-center p-3"
+    >
+      <h3
+        className="text-3xl font-bold pb-4"
+      >
+        Oops... Not Found
+      </h3>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <div>
+          <button
+            className="rounded-md transition-all text-white py-1 px-5 mt-2 bg-primary hover:bg-hover hover:transition-all font-bold  bg-primary mt-2"
+            type="button"
+          >
+            Home
+          </button>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Reset password layout should render the email Form 1`] = `
+<div>
+   
+  <h3
+    className="text-2xl font-bold text-center py-3 font-rale"
+  >
+    You are not authorized
+  </h3>
+  <p
+    className="mb-3 text-sm"
+  >
+    You don't have access or your access has expired
+  </p>
+  <div />
+  <a
+    href="/accounts/reset-password"
+    onClick={[Function]}
+  >
+    Try again
+  </a>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    Cancel
+  </a>
+</div>
+`;
+
+exports[`Reset password layout should render the email sent notification 1`] = `
+Array [
+  <h3
+    className="text-2xl font-rale mb-2 text-center font-bold"
+  >
+    Email Sent
+  </h3>,
+  <img
+    alt=""
+    className="h-24  mx-auto mt-4"
+    src="https://cdn.pixabay.com/photo/2012/04/18/19/01/check-37583_960_720.png"
+  />,
+  <div
+    className="text-left mt-4"
+  >
+    <p
+      className="mb-2 text-justify text-sm"
+    >
+      A link to reset your password has been sent to
+       
+      <b />
+    </p>
+    <p
+      className=" text-justify text-sm"
+    >
+      Did not receive the email? Remember to check 
+      <b>
+        Junk/Spam
+      </b>
+       folder
+    </p>
+  </div>,
+  <a
+    className="w-fit my-2"
+    href="/"
+    onClick={[Function]}
+  >
+    <button
+      className="bg-primary rounded-md text-white font-bold font-raleway py-2 px-3 hover:bg-hover transition-all block hover:transition-all"
+      type="button"
+    >
+      Home
+    </button>
+  </a>,
+]
+`;
+
+exports[`Reset password layout should render the new password form 1`] = `
+<div>
+   
+  <h3
+    className="text-2xl font-bold text-center py-3 font-rale"
+  >
+    You are not authorized
+  </h3>
+  <p
+    className="mb-3 text-sm"
+  >
+    You don't have access or your access has expired
+  </p>
+  <div />
+  <a
+    href="/accounts/reset-password"
+    onClick={[Function]}
+  >
+    Try again
+  </a>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    Cancel
+  </a>
+</div>
+`;
+
+exports[`Reset password layout should render the success message 1`] = `
+Array [
+  <h3
+    className="text-2xl text-center font-rale font-bold mb-2"
+  >
+    Password Changed
+  </h3>,
+  <hr />,
+  <div
+    className="text-left"
+  >
+    <p
+      className="py-1 mb-2  text-sm"
+    >
+      Dear, you got yourself a new password.
+    </p>
+    <a
+      className="py-1 px-3  bg-primary hover:bg-hover text-white rounded-md font-bold mt-5 mx-auto"
+      href="/login"
+      onClick={[Function]}
+    >
+      Login
+    </a>
+    <p
+      className="py-1 mt-2 text-sm"
+    >
+      You will receive email confirming your changes.
+    </p>
+  </div>,
+]
+`;
+
+exports[`Testing Library Should submit the form and raise an error when email not found 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h3
+        class="text-2xl font-bold text-center py-3 font-rale"
+      >
+        RESET PASSWORD
+      </h3>
+      <p
+        class="mb-3 text-sm"
+      >
+        Enter your email to receive a password reset link
+      </p>
+      <form
+        id="form"
+        role="form"
+      >
+        <div
+          class="relative w-full"
+        >
+          <label
+            class="block font-bold mb-2 focus:outline-none required"
+            for="email"
+          >
+            Email:
+          </label>
+          <input
+            class="block w-full rounded-md border-2 placeholder:text-gray-400 placeholder:text-small py-1 px-3 focus:outline-none border-green-500 "
+            id="email"
+            name="email"
+            placeholder="Your email"
+            type="email"
+          />
+          <p
+            class="text-sm text-red-900 font-bold py-1/2 pl-2 opacity-0"
+            role="alert"
+          />
+        </div>
+        <div
+          class="flex flex-row justify-between mt-2"
+        >
+          <div>
+            <button
+              class="rounded-md transition-all text-white py-1 px-5 mt-2 bg-primary hover:bg-hover hover:transition-all font-bold undefined"
+              type="submit"
+            >
+              SUBMIT
+            </button>
+          </div>
+          <a
+            href="/"
+          >
+            <div>
+              <button
+                class="rounded-md transition-all text-white py-1 px-5 mt-2 bg-red-500 hover:bg-hover hover:transition-all font-bold hover:bg-hovercancel bg-cancel hover:transition-all"
+                type="button"
+              >
+                CANCEL
+              </button>
+            </div>
+          </a>
+        </div>
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <h3
+      class="text-2xl font-bold text-center py-3 font-rale"
+    >
+      RESET PASSWORD
+    </h3>
+    <p
+      class="mb-3 text-sm"
+    >
+      Enter your email to receive a password reset link
+    </p>
+    <form
+      id="form"
+      role="form"
+    >
+      <div
+        class="relative w-full"
+      >
+        <label
+          class="block font-bold mb-2 focus:outline-none required"
+          for="email"
+        >
+          Email:
+        </label>
+        <input
+          class="block w-full rounded-md border-2 placeholder:text-gray-400 placeholder:text-small py-1 px-3 focus:outline-none border-green-500 "
+          id="email"
+          name="email"
+          placeholder="Your email"
+          type="email"
+        />
+        <p
+          class="text-sm text-red-900 font-bold py-1/2 pl-2 opacity-0"
+          role="alert"
+        />
+      </div>
+      <div
+        class="flex flex-row justify-between mt-2"
+      >
+        <div>
+          <button
+            class="rounded-md transition-all text-white py-1 px-5 mt-2 bg-primary hover:bg-hover hover:transition-all font-bold undefined"
+            type="submit"
+          >
+            SUBMIT
+          </button>
+        </div>
+        <a
+          href="/"
+        >
+          <div>
+            <button
+              class="rounded-md transition-all text-white py-1 px-5 mt-2 bg-red-500 hover:bg-hover hover:transition-all font-bold hover:bg-hovercancel bg-cancel hover:transition-all"
+              type="button"
+            >
+              CANCEL
+            </button>
+          </div>
+        </a>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`function testing Should return a errors 1`] = `
+<BrowserRouter>
+  <Router
+    location={
+      Object {
+        "hash": "",
+        "key": "default",
+        "pathname": "/",
+        "search": "",
+        "state": null,
+      }
+    }
+    navigationType="POP"
+    navigator={
+      Object {
+        "action": "POP",
+        "back": [Function],
+        "block": [Function],
+        "createHref": [Function],
+        "forward": [Function],
+        "go": [Function],
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "default",
+          "pathname": "/",
+          "search": "",
+          "state": null,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <ResetFormPage
+      handleEmail={[MockFunction]}
+    >
+      <h3
+        className="text-2xl font-bold text-center py-3 font-rale"
+      >
+        RESET PASSWORD
+      </h3>
+      <p
+        className="mb-3 text-sm"
+      >
+        Enter your email to receive a password reset link
+      </p>
+      <form
+        id="form"
+        onSubmit={[Function]}
+        role="form"
+      >
+        <div
+          className="relative w-full"
+        >
+          <label
+            className="block font-bold mb-2 focus:outline-none required"
+            htmlFor="email"
+          >
+            Email:
+          </label>
+          <input
+            className="block w-full rounded-md border-2 placeholder:text-gray-400 placeholder:text-small py-1 px-3 focus:outline-none border-green-500 "
+            id="email"
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Your email"
+            type="email"
+          />
+          <p
+            className="text-sm text-red-900 font-bold py-1/2 pl-2 opacity-0"
+            role="alert"
+          />
+        </div>
+        <div
+          className="flex flex-row justify-between mt-2"
+        >
+          <Button
+            name="SUBMIT"
+            type="submit"
+          >
+            <div>
+              <button
+                className="rounded-md transition-all text-white py-1 px-5 mt-2 bg-primary hover:bg-hover hover:transition-all font-bold undefined"
+                type="submit"
+              >
+                SUBMIT
+              </button>
+            </div>
+          </Button>
+          <Link
+            to="/"
+          >
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <Button
+                icon="cancel"
+                name="CANCEL"
+                styles="hover:bg-hovercancel bg-cancel hover:transition-all"
+                type="button"
+              >
+                <div>
+                  <button
+                    className="rounded-md transition-all text-white py-1 px-5 mt-2 bg-red-500 hover:bg-hover hover:transition-all font-bold hover:bg-hovercancel bg-cancel hover:transition-all"
+                    type="button"
+                  >
+                    CANCEL
+                  </button>
+                </div>
+              </Button>
+            </a>
+          </Link>
+        </div>
+      </form>
+    </ResetFormPage>
+  </Router>
+</BrowserRouter>
+`;

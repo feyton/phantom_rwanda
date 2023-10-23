@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LanguageButton should render LanguageButton 1`] = `
+<div>
+  <select
+    className="bg-background border outline-none md:ml-6 lg:ml-6 xl:ml-6 mt-5 flex py-2 px-4 text-sm hover:font-bold"
+    onChange={[Function]}
+  >
+    <option
+      className=" border-none bg-background w-full cursor-pointer"
+      value="en"
+    >
+      English
+    </option>
+    <option
+      className=" border-none bg-background w-full cursor-pointer"
+      value="fr"
+    >
+      French
+    </option>
+    <option
+      className=" border-none bg-background cursor-pointer"
+      value="kn"
+    >
+      Kinyarwanda
+    </option>
+  </select>
+</div>
+`;

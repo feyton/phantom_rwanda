@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UpdateDriver should render the UpdateDriver component 1`] = `
+<div>
+  <div>
+    <div
+      className="flex lg:mx-24 xl:mx-24 border rounded-xl my-8"
+    >
+      <div>
+        <img
+          alt="bus"
+          className="hidden lg:flex xl:flex h-full rounded-l-xl object-cover"
+          src="bus2.jpg"
+        />
+      </div>
+      <div
+        className="mx-12 w-full"
+      >
+        <h1
+          className="font-raleway font-bold my-8 text-2xl"
+        >
+          Update 
+          Driver
+           Profile
+        </h1>
+        <form
+          className="flex flex-col "
+          id="updateForm"
+          onSubmit={[Function]}
+        >
+          <div
+            className="flex flex-col lg:flex-row xl:flex-row"
+          >
+            <div
+              className="lg:mr-4 xl:mr-4 lg:w-96 xl:w-96"
+            >
+              <div>
+                <div
+                  className="undefined mb-2 block font-raleway"
+                >
+                  <label
+                    className="block text-grey-darker text-sm font-bold font-rale mb-2"
+                  >
+                    First Name
+                  </label>
+                  <input
+                    className="undefined appearance-none border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                    defaultValue="Eric"
+                    id="firstName"
+                    name="firstName"
+                    onChange={[Function]}
+                    required={false}
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="h-8"
+                />
+              </div>
+              <div>
+                <div
+                  className="undefined mb-2 block font-raleway"
+                >
+                  <label
+                    className="block text-grey-darker text-sm font-bold font-rale mb-2"
+                  >
+                    mobile number
+                  </label>
+                  <input
+                    className="undefined appearance-none border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                    defaultValue="0789989655"
+                    id="mobileNumber"
+                    name="mobileNumber"
+                    onChange={[Function]}
+                    required={false}
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="h-8"
+                />
+              </div>
+              <div>
+                <div
+                  className="undefined mb-2 block font-raleway"
+                >
+                  <label
+                    className="block text-grey-darker text-sm font-bold font-rale mb-2"
+                  >
+                    Address
+                  </label>
+                  <input
+                    className="undefined appearance-none border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                    defaultValue="Kacyiru, Kigali"
+                    id="address"
+                    name="address"
+                    onChange={[Function]}
+                    required={false}
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="h-8"
+                />
+              </div>
+            </div>
+            <div
+              className="lg:ml-4 xl:ml-4 lg:w-96 xl:w-96"
+            >
+              <div>
+                <div
+                  className="undefined mb-2 block font-raleway"
+                >
+                  <label
+                    className="block text-grey-darker text-sm font-bold font-rale mb-2"
+                  >
+                    Last name
+                  </label>
+                  <input
+                    className="undefined appearance-none border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                    defaultValue="SHEMA"
+                    id="lastName"
+                    name="lastName"
+                    onChange={[Function]}
+                    required={false}
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="h-8"
+                />
+              </div>
+              <div>
+                <div
+                  className="mb-2 block font-raleway"
+                >
+                  <label
+                    className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                    htmlFor="Company"
+                  >
+                    Company
+                  </label>
+                  <select
+                    className="border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden mb-1"
+                    defaultValue="REL"
+                    id="company"
+                    name="company"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                  >
+                    <option
+                      hidden={true}
+                    >
+                      Select Company
+                    </option>
+                    <option
+                      value="REL"
+                    >
+                      Royal Express Limited
+                    </option>
+                    <option
+                      value="CEL"
+                    >
+                      City Express Limited
+                    </option>
+                    <option
+                      value="KBS"
+                    >
+                      Kigali Bus Services
+                    </option>
+                  </select>
+                </div>
+                <div
+                  className="h-8"
+                />
+              </div>
+              <div>
+                <div
+                  className="undefined mb-2 block font-raleway"
+                >
+                  <label
+                    className="block text-grey-darker text-sm font-bold font-rale mb-2"
+                  >
+                    National ID
+                  </label>
+                  <input
+                    className="undefined appearance-none border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                    defaultValue="1199780020002120"
+                    id="nationalID"
+                    name="nationalID"
+                    onChange={[Function]}
+                    required={false}
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="h-8"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              className="undefined mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale mb-2"
+              >
+                Driver license
+              </label>
+              <input
+                className="undefined appearance-none border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                defaultValue="1199780020002120"
+                id="driverLicense"
+                name="driverLicense"
+                onChange={[Function]}
+                required={false}
+                type="text"
+              />
+            </div>
+            <div
+              className="h-8"
+            />
+          </div>
+          <div
+            className="flex justify-center mt-6"
+          >
+            <div>
+              <button
+                className="bg-primary mb-8 text-background py-2 rounded-xl py-2 text-base md:text-sm px-5"
+                onClick={[Function]}
+                type="submit"
+              >
+                Update
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LabelComponent should render the LabelComponent component 1`] = `
+<label
+  className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+/>
+`;

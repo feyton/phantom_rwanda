@@ -1,0 +1,335 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Registration Operators Should render the role page 1`] = `
+<div
+  className="w-full h-full font-raleway px-10 pt-3"
+>
+  <h1
+    className="text-2xl font-bold text-center justify-center font-rale"
+  >
+    Manage roles and permissions
+  </h1>
+  <div
+    className="mt-6 p-5 rounded-md shadow-main"
+  >
+    <div
+      className="w-full border rounded-sm p-2 "
+    >
+      <div>
+        <ul
+          className="grid grid-cols-[30%_60%] gap-1 border-b-2 font-raleway  font-bold py-1 px-2"
+        >
+          <li>
+            Role
+          </li>
+          <ul
+            className="grid grid-cols-2"
+          >
+            <li>
+              Resources
+            </li>
+            <li>
+              Permissions
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <div
+        className="border-b-2"
+      >
+        <ul
+          className="font-raleway capitalize grid grid-cols-[30%_60%] gap-1 border-b-2 py-1"
+        >
+          <li
+            className="font-bold  text-primary"
+          >
+            <span
+              className="cursor-pointer"
+              onClick={[Function]}
+            >
+              admin
+            </span>
+          </li>
+          <li>
+            <ul>
+              <div
+                className="grid grid-cols-2 py-2 justify-center center border-b "
+              >
+                <li
+                  className="text-black "
+                >
+                  driver
+                </li>
+                <li
+                  className="py-1 flex flex-wrap lg:inline-block"
+                >
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    get
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    create
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    update
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    delete
+                  </span>
+                </li>
+              </div>
+              <div
+                className="grid grid-cols-2 py-2 justify-center center border-b "
+              >
+                <li
+                  className="text-black "
+                >
+                  routes
+                </li>
+                <li
+                  className="py-1 flex flex-wrap lg:inline-block"
+                >
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    get
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    create
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    update
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    delete
+                  </span>
+                </li>
+              </div>
+              <div
+                className="grid grid-cols-2 py-2 justify-center center border-b "
+              >
+                <li
+                  className="text-black "
+                >
+                  operator
+                </li>
+                <li
+                  className="py-1 flex flex-wrap lg:inline-block"
+                >
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    get
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    create
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    update
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    delete
+                  </span>
+                </li>
+              </div>
+              <div
+                className="grid grid-cols-2 py-2 justify-center center border-b "
+              >
+                <li
+                  className="text-black "
+                >
+                  company
+                </li>
+                <li
+                  className="py-1 flex flex-wrap lg:inline-block"
+                >
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    get
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    create
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    update
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    delete
+                  </span>
+                </li>
+              </div>
+            </ul>
+          </li>
+          <li />
+        </ul>
+        <ul
+          className="font-raleway capitalize grid grid-cols-[30%_60%] gap-1 border-b-2 py-1"
+        >
+          <li
+            className="font-bold  text-primary"
+          >
+            <span
+              className="cursor-pointer"
+              onClick={[Function]}
+            >
+              operator
+            </span>
+          </li>
+          <li>
+            <ul>
+              <div
+                className="grid grid-cols-2 py-2 justify-center center border-b "
+              >
+                <li
+                  className="text-black "
+                >
+                  driver
+                </li>
+                <li
+                  className="py-1 flex flex-wrap lg:inline-block"
+                >
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    get
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    create
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    update
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    delete
+                  </span>
+                </li>
+              </div>
+              <div
+                className="grid grid-cols-2 py-2 justify-center center border-b "
+              >
+                <li
+                  className="text-black "
+                >
+                  routes
+                </li>
+                <li
+                  className="py-1 flex flex-wrap lg:inline-block"
+                >
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    get
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-create bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    create
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-update bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    update
+                  </span>
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-delete bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    delete
+                  </span>
+                </li>
+              </div>
+            </ul>
+          </li>
+          <li />
+        </ul>
+        <ul
+          className="font-raleway capitalize grid grid-cols-[30%_60%] gap-1 border-b-2 py-1"
+        >
+          <li
+            className="font-bold  text-primary"
+          >
+            <span
+              className="cursor-pointer"
+              onClick={[Function]}
+            >
+              driver
+            </span>
+          </li>
+          <li>
+            <ul>
+              <div
+                className="grid grid-cols-2 py-2 justify-center center border-b "
+              >
+                <li
+                  className="text-black "
+                >
+                  driver
+                </li>
+                <li
+                  className="py-1 flex flex-wrap lg:inline-block"
+                >
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    get
+                  </span>
+                </li>
+              </div>
+              <div
+                className="grid grid-cols-2 py-2 justify-center center border-b "
+              >
+                <li
+                  className="text-black "
+                >
+                  routes
+                </li>
+                <li
+                  className="py-1 flex flex-wrap lg:inline-block"
+                >
+                  <span
+                    className="mx-2 my-1 lg:my-0 uppercase bg-get bg-opacity-75 cursor-pointer text-white py-1 px-2 rounded-sm font-bold"
+                  >
+                    get
+                  </span>
+                </li>
+              </div>
+            </ul>
+          </li>
+          <li />
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;

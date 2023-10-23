@@ -1,0 +1,56 @@
+[{
+        "name": "admin",
+        "permissions": [{
+            "object": "driver",
+            "perms": [
+                "get", "create", "update", "delete"
+            ]
+        }, {
+            "object": "routes",
+            "perms": [
+                "get", "create", "update", "delete"
+            ]
+        },
+        {
+            "object": "operator",
+            "perms": [
+                "get", "create", "update", "delete"
+            ]
+        },
+        {
+            "object": "company",
+            "perms": [
+                "get", "create", "update", "delete"
+            ]
+        }
+    ]
+    },
+    {
+        "name": "operator",
+        "permissions": [{
+            "object": "driver",
+            "perms": [
+                "get", "create", "update", "delete"
+            ]
+        }, {
+            "object": "routes",
+            "perms": [
+                "get", "create", "update", "delete"
+            ]
+        }]
+    },
+    {
+        "name": "driver",
+        "permissions": [{
+            "object": "driver",
+            "perms": [
+                "get"
+            ]
+        }, {
+            "object": "routes",
+            "perms": [
+                "get"
+            ]
+        }]
+    }
+]

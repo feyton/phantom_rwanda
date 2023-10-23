@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render the Card component 1`] = `
+Array [
+  <div
+    className="undefined border w-52 h-52 px-4 text-center flex flex-col justify-center items-center rounded-lg shadow-md"
+  >
+    <img
+      className="w-12 mt-4"
+    />
+    <h3
+      className="font-raley mt-2 font-extrabold text-sm"
+    />
+    <p
+      className="font-sans text-center text-sm my-2"
+    />
+  </div>,
+  ")",
+]
+`;

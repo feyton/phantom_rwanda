@@ -1,0 +1,563 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterOperatorPages component test it should render RegisterDriver page 1`] = `
+<div
+  className="py-0  md:flex md:justify-center pt-3"
+>
+  <div
+    className="block bg-white rounded  p-2 w-full lg:max-w-3xl shadow-lg min-h-[70vh] mr-4"
+  >
+    <div
+      className="py-4 px-8 text-black font-bold lg:px-4 md:px-4 "
+    >
+      <h1
+        className="text-center  text-2xl  font-raleway font-bold md:ml-0 md:text-left"
+      >
+         
+        Register Driver
+      </h1>
+    </div>
+    <form
+      id="form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="py-4 px-4  w-full  lg:mx-auto "
+      >
+        <div
+          className="block mb-4 xl:flex md:grid md:grid-cols-2 md:gap-2"
+        >
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="firstname"
+              >
+                First name
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="firstname"
+                name="firstName"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Vedaste"
+                type="text"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="lastname"
+              >
+                Last name
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="lastname"
+                name="lastName"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Hategekimana"
+                type="text"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+        </div>
+        <div
+          className="block mb-4 xl:flex md:grid md:grid-cols-2 md:gap-2"
+        >
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="email"
+                name="email"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="example@mail.com"
+                type="email"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="mobileNumber"
+              >
+                Mobile number
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="mobileNumber"
+                name="mobileNumber"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="0789000000"
+                type="text"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+        </div>
+        <div
+          className="block mb-4 xl:flex md:grid md:grid-cols-2 md:gap-2"
+        >
+          <div
+            className="mr-1 xl:w-1/2"
+          >
+            <label
+              className="block text-grey-darker text-sm font-bold mb-2"
+              htmlFor="company"
+              name="company"
+            >
+              Select company
+            </label>
+            <select
+              className="appearance-none border rounded w-full py-2 px-3 text-grey-darker bg-gray-200"
+              id="company"
+              name="company"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Select company"
+              required={true}
+            >
+              <option
+                className="text-grey-darker"
+                hidden={true}
+              >
+                 
+                Select company
+                 
+              </option>
+              <option
+                className="text-grey-darker"
+                hidden={false}
+                value="Royal Express Limited"
+              >
+                 
+                Royal Express Limited
+                 
+              </option>
+              <option
+                className="text-grey-darker"
+                hidden={false}
+                value="City Express Ltd"
+              >
+                 
+                City Express Ltd
+                 
+              </option>
+              <option
+                className="text-grey-darker"
+                hidden={false}
+                value="Kigali bus services"
+              >
+                 
+                Kigali bus services
+                 
+              </option>
+            </select>
+          </div>
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="address"
+              >
+                Address
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="address"
+                name="address"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Cell, Sector, District"
+                type="text"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+        </div>
+        <div
+          className="block mb-4 xl:flex md:grid md:grid-cols-2 md:gap-2"
+        >
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="nationalid"
+              >
+                National ID
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="nationalid"
+                name="nationalID"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="1 119950030880 0 40"
+                type="text"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="license"
+              >
+                Driver License
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="license"
+                name="license"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="1 119950030880 0 40"
+                type="text"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+        </div>
+        <div
+          className="flex justify-center align"
+        >
+          <div>
+            <button
+              className="undefined bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl m-2 "
+              type="submit"
+            >
+              Register Driver
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`RegisterOperatorPages component test it should render RegisterOperator page 1`] = `
+<div
+  className="py-0  md:flex md:justify-center pt-3"
+>
+  <div
+    className="block bg-white rounded  p-2 w-full lg:max-w-3xl shadow-lg min-h-[70vh] mr-4"
+  >
+    <div
+      className="py-4 px-8 text-black font-bold lg:px-4 md:px-4 "
+    >
+      <h1
+        className="text-center  text-2xl  font-raleway font-bold md:ml-0 md:text-left"
+      >
+         
+        Register Operator
+      </h1>
+    </div>
+    <form
+      id="form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="py-4 px-4  w-full  lg:mx-auto "
+      >
+        <div
+          className="block mb-4 xl:flex md:grid md:grid-cols-2 md:gap-2"
+        >
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="firstname"
+              >
+                First name
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="firstname"
+                name="firstName"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Vedaste"
+                type="text"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="lastname"
+              >
+                Last name
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="lastname"
+                name="lastName"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Hategekimana"
+                type="text"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+        </div>
+        <div
+          className="block mb-4 xl:flex md:grid md:grid-cols-2 md:gap-2"
+        >
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="email"
+                name="email"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="example@mail.com"
+                type="email"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="mobileNumber"
+              >
+                Mobile number
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="mobileNumber"
+                name="mobileNumber"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="0789000000"
+                type="text"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+        </div>
+        <div
+          className="block mb-4 xl:flex md:grid md:grid-cols-2 md:gap-2"
+        >
+          <div
+            className="mr-1 xl:w-1/2"
+          >
+            <label
+              className="block text-grey-darker text-sm font-bold mb-2"
+              htmlFor="company"
+              name="company"
+            >
+              Select company
+            </label>
+            <select
+              className="appearance-none border rounded w-full py-2 px-3 text-grey-darker bg-gray-200"
+              id="company"
+              name="company"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Select company"
+              required={true}
+            >
+              <option
+                className="text-grey-darker"
+                hidden={true}
+              >
+                 
+                Select company
+                 
+              </option>
+              <option
+                className="text-grey-darker"
+                hidden={false}
+                value="Royal Express Limited"
+              >
+                 
+                Royal Express Limited
+                 
+              </option>
+              <option
+                className="text-grey-darker"
+                hidden={false}
+                value="City Express Ltd"
+              >
+                 
+                City Express Ltd
+                 
+              </option>
+              <option
+                className="text-grey-darker"
+                hidden={false}
+                value="Kigali bus services"
+              >
+                 
+                Kigali bus services
+                 
+              </option>
+            </select>
+          </div>
+          <div
+            className="ml-1 xl:w-1/2 "
+          >
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="address"
+              >
+                Address
+              </label>
+              <input
+                className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                id="address"
+                name="address"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Cell, Sector, District"
+                type="text"
+              />
+            </div>
+            <p
+              className="text-red-800"
+            />
+          </div>
+        </div>
+        <div
+          className="mb-4"
+        >
+          <div
+            className="w-full mr-3 flex flex-col"
+          >
+            <label
+              className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+              htmlFor="nationalid"
+            >
+              National ID
+            </label>
+            <input
+              className="appearance-none border font-raleway rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+              id="nationalID"
+              name="nationalID"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="1 119950030880 0 40"
+              type="text"
+            />
+            <p
+              className="text-red-800"
+            />
+          </div>
+        </div>
+        <div
+          className="flex justify-center align"
+        >
+          <div>
+            <button
+              className="undefined bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl m-2 "
+              type="submit"
+            >
+              Register Operator
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Buses form component test it should render Buses form component 1`] = `
+<div
+  className="px-8 py-4 my-auto font-raleway md:py-8"
+>
+  <form
+    className="py-8 shadow-main px-4 flex flex-col w-full md:max-w-lg md:mx-auto"
+    onSubmit={[Function]}
+  >
+    <h1
+      className="font-extrabold text-2xl pb-8"
+    />
+    <label
+      className="font-bold mb-2"
+      htmlFor="busType"
+    >
+      Bus type
+    </label>
+    <select
+      className="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+      id="busType"
+      name="busType"
+      onBlur={[Function]}
+      onChange={[Function]}
+    >
+      <option
+        hidden={true}
+        value=""
+      >
+        Select bus type
+      </option>
+      <option
+        value="Coaster"
+      >
+        Coaster
+      </option>
+      <option
+        value="Minibus"
+      >
+        Minibus
+      </option>
+      <option
+        value="Big Bus"
+      >
+        Big Bus
+      </option>
+    </select>
+    <p
+      className="text-rose-500 mb-2"
+    />
+    <label
+      className="font-bold mb-2"
+      htmlFor="busType"
+    >
+      Company
+    </label>
+    <select
+      className="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+      id="company"
+      name="company"
+      onBlur={[Function]}
+      onChange={[Function]}
+    >
+      <option
+        hidden={true}
+        value=""
+      >
+        Select company
+      </option>
+      <option
+        value="KBS"
+      >
+        Kigali Bus Service
+      </option>
+      <option
+        value="Royal express"
+      >
+        Royal Express
+      </option>
+      <option
+        value="Virunga express"
+      >
+        Virunga Express
+      </option>
+    </select>
+    <p
+      className="text-rose-500 mb-2"
+    />
+    <label
+      className="font-bold mb-2"
+      htmlFor="seats"
+    >
+      Seats
+    </label>
+    <input
+      className="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+      name="seats"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="Enter number of seats"
+      type="number"
+    />
+    <p
+      className="text-rose-500 mb-2"
+    />
+    <label
+      className="font-bold mb-2"
+      htmlFor="seats"
+    >
+      Plate number
+    </label>
+    <input
+      className="rounded-sm px-3 py-3 mb-2 bg-[#EFEFEF]"
+      name="plateNumber"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="Enter plate number"
+      type="text"
+    />
+    <p
+      className="text-rose-500 mb-2"
+    />
+    <div
+      className="self-center"
+    >
+      <div>
+        <button
+          className="bg-primary text-sm text-white py-2 px-3 mt-4 rounded-xl py-2 text-base md:text-sm px-5"
+          type="submit"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;

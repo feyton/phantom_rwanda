@@ -1,0 +1,61 @@
+[{
+        "id": 1,
+        "firstName": "Ivad",
+        "email": "driver@me.com",
+        "roles": {
+            "name": "driver",
+            "permissions": [{
+                "driver": [
+                    "get"
+                ],
+                "buses": [
+                    "get"
+                ]
+            }]
+        }
+    },
+    {
+        "id": 2,
+        "firstName": "Fabrice",
+        "email": "admin@me.com",
+        "roles": {
+            "name": "admin",
+            "permissions": [{
+                "driver": [
+                    "get", "create", "update", "delete"
+                ],
+                "routes": [
+                    "get", "create", "update", "delete"
+                ],
+                "buses": [
+                    "get", "create", "update", "delete"
+                ],
+                "operator": [
+                    "get", "create", "update", "delete"
+                ],
+                "company": [
+                    "get", "create", "update", "delete"
+                ]
+            }]
+        }
+    },
+    {
+        "id": 3,
+        "firstName": "Abdul",
+        "email": "operator@me.com",
+        "roles": {
+            "name": "operator",
+            "permissions": [{
+                "driver": [
+                    "get", "create", "update", "delete"
+                ],
+                "routes": [
+                    "get", "create", "update", "delete"
+                ],
+                "buses": [
+                    "get", "create", "update", "delete"
+                ]
+            }]
+        }
+    }
+]

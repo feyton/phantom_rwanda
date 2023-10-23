@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render Header 1`] = `
+<div
+  className="flex bg-background border-b-4 pb-4 sticky top-0 z-20"
+>
+  <div>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="Phantom"
+        className="w-44 xl:w-48 ml-8 xl:ml-20 mt-4"
+        src="phantom.png"
+      />
+    </a>
+  </div>
+  <div
+    className="hidden md:flex xl:flex ml-auto mr-20"
+  >
+    <a
+      href="/login"
+      onClick={[Function]}
+    >
+      <div>
+        <button
+          className="bg-primary hover:bg-hover text-white rounded-xl mt-5 ml-6 rounded-xl py-2 text-base md:text-sm px-5"
+          type="submit"
+        >
+          For operators
+        </button>
+      </div>
+    </a>
+    <a
+      href="/tracking-page"
+      onClick={[Function]}
+    >
+      <div>
+        <button
+          className="border border-primary bg-background hover:bg-hover2 text-primary rounded-xl mt-5 ml-6 px-6 rounded-xl py-2 text-base md:text-sm px-5"
+          type="submit"
+        >
+          track_bus
+        </button>
+      </div>
+    </a>
+    <div>
+      <select
+        className="bg-background border outline-none md:ml-6 lg:ml-6 xl:ml-6 mt-5 flex py-2 px-4 text-sm hover:font-bold"
+        onChange={[Function]}
+      >
+        <option
+          className=" border-none bg-background w-full cursor-pointer"
+          value="en"
+        >
+          English
+        </option>
+        <option
+          className=" border-none bg-background w-full cursor-pointer"
+          value="fr"
+        >
+          French
+        </option>
+        <option
+          className=" border-none bg-background cursor-pointer"
+          value="kn"
+        >
+          Kinyarwanda
+        </option>
+      </select>
+    </div>
+  </div>
+  <section
+    className="flex flex-col absolute right-0 bg-background px-2"
+  >
+    <button
+      className="md:hidden xl:hidden ml-auto mr-12 mt-5"
+      id="toggle"
+      onClick={[Function]}
+      type="button"
+    >
+      <div>
+        <div
+          className="undefined h-1 w-7 bg-primary mt-1"
+        />
+        <div
+          className="undefined h-1 w-7 bg-primary mt-1"
+        />
+        <div
+          className="undefined h-1 w-7 bg-primary mt-1"
+        />
+      </div>
+    </button>
+  </section>
+</div>
+`;

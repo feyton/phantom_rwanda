@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OperatorProfile should render the OperatorProfile component 1`] = `
+<div>
+  <div
+    className="bg-white rounded  w-full shadow-md min-h-[70vh] mt-6 pb-10"
+  >
+    <div>
+      <div
+        className="flex flex-col tex-center md:flex-row lg:flex-row xl:flex-row items-center justify-center bg-gray-100 mb-10 h-80 md:h-60 lg:h-60 xl:h-60 pb-10 font-raleway"
+      >
+        <span
+          className="w-20 h-20 my-8 md:w-24 lg:w-24 xl:w-24 md:h-24 lg:h-24 xl:h-24 mr-6"
+        >
+          <div
+            className="relative"
+          >
+            <label
+              htmlFor=""
+            >
+              <img
+                alt="profile-img"
+                className=" opacity-100 rounded-full object-cover w-20 h-20 md:w-24 lg:w-24 xl:w-24 md:h-24 lg:h-24 xl:h-24"
+                id="profile-img"
+              />
+              <div
+                className="hidden absolute bg-gray-100 rounded-full w-5 h-5 left-7 md:left-10 lg:left-10 xl:left-20 top-7 md:top-8 lg:top-16 xl:top-18 cursor-pointer"
+              >
+                <img
+                  alt=""
+                  className="w-3 h-3 m-1"
+                  src="camera-solid.svg"
+                />
+              </div>
+            </label>
+          </div>
+          <input
+            accept=".jpg, .jpeg, .png"
+            id="photo-upload"
+            onChange={[Function]}
+            type="file"
+          />
+        </span>
+        <div
+          className="h-20 flex flex-col items-center md:items-baseline lg:items-baseline xl:items-baseline"
+        >
+          <h1
+            className="font-black text-lg md:text-2xl lg:text-3xl xl:text-3xl "
+          >
+             
+          </h1>
+          <h2
+            className="font-bold text-sm md:text-base lg:text-base xl:text-base "
+          >
+            <b
+              className="capitalize text-primary"
+            />
+             
+             
+          </h2>
+          <h3 />
+          <div
+            className=""
+          >
+            <div>
+              <button
+                className="flex text-white text-sm md:text-base lg:text-base xl:text-base mt-4 px-4 md:px-6 lg:px-6 xl:px-6 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl m-2 "
+                onClick={[Function]}
+              >
+                Edit profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex flex-col items-center"
+    >
+      <form
+        action=""
+        onSubmit={[Function]}
+      >
+        <section
+          className="flex flex-col items-center lg:flex-row xl:flex-row"
+        >
+          <div
+            className="ml-8"
+          >
+            <div
+              className="mb-4 block font-raleway"
+            >
+              <div
+                className="undefined mb-2 block font-raleway"
+              >
+                <label
+                  className="block text-grey-darker text-sm font-bold font-rale mb-2"
+                  htmlFor="FirstName"
+                >
+                  First Name
+                </label>
+                <input
+                  className="font-rale border-none rounded w-full py-2 px-3 text-grey-darker outline-hidden bg-white text-md appearance-none border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                  disabled={true}
+                  id="firstName"
+                  name="firstName"
+                  required={false}
+                />
+              </div>
+            </div>
+            <div
+              className="mb-4 block font-raleway"
+            >
+              <div
+                className="undefined mb-2 block font-raleway"
+              >
+                <label
+                  className="block text-grey-darker text-sm font-bold font-rale mb-2"
+                  htmlFor="LastName"
+                >
+                  Last name 
+                </label>
+                <input
+                  className="font-rale border-none rounded w-full py-2 px-3 text-grey-darker outline-hidden bg-white text-md appearance-none border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                  disabled={true}
+                  id="lastName"
+                  name="lastName"
+                  required={false}
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="pl-10 lg:pl-24 xl:pl-24"
+          >
+            <div
+              className="mb-4 block font-raleway"
+            >
+              <div
+                className="undefined mb-2 block font-raleway"
+              >
+                <label
+                  className="block text-grey-darker text-sm font-bold font-rale mb-2"
+                  htmlFor="mobileNumber"
+                >
+                  Mobile Number 
+                </label>
+                <input
+                  className="font-rale border-none rounded w-full py-2 px-3 text-grey-darker outline-hidden bg-white text-md appearance-none border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                  disabled={true}
+                  id="mobileNumber"
+                  name="mobileNumber"
+                  pattern="^07[0-9]{8}$"
+                  required={true}
+                  type="text"
+                />
+              </div>
+            </div>
+            <div
+              className="mb-4 block font-raleway"
+            >
+              <div
+                className="undefined mb-2 block font-raleway"
+              >
+                <label
+                  className="block text-grey-darker text-sm font-bold font-rale mb-2"
+                  htmlFor="address"
+                >
+                  Address
+                </label>
+                <input
+                  className="font-rale border-none rounded w-full py-2 px-3 text-grey-darker outline-hidden bg-white text-md appearance-none border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden"
+                  disabled={true}
+                  id="address"
+                  name="address"
+                  required={false}
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <div
+          className="flex"
+        >
+          <div>
+            <button
+              className="hidden bg-red text-white px-10 ml-8 mt-16 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl m-2 "
+              type="button"
+            >
+              cancel
+            </button>
+          </div>
+          <div>
+            <button
+              className="hidden text-white px-10 ml-8 mt-16 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl m-2 "
+              type="submit"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

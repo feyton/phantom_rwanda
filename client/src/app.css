@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  background-color: #fafafa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
+}
+
+.required::after {
+  content: '*';
+  color: rgb(201, 35, 35);
+  font-weight: bold;
+}
+
+.error-message {
+  color: rgb(201, 35, 35);
+  margin-top: 0;
+}
+
+#photo-upload {
+  display: none;
+}
+
+.leaflet-routing-alt {
+  display: none;
+}
+
+.leaflet-verticalcenter {
+  margin-left: 10px;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.loader:after {
+  content: " ";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 4px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loader 2s linear infinite;
+}
+
+.deleted {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Raleway";
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.popCustom .card {
+  width: 200px;
+  height: 100px;
+  box-shadow: 0px 0px 2px 2px green;
+  font-family: "Lexend";
+  font-size: small;
+  padding: .2rem;
+  position: relative;
+}
+
+.popCustom .card div {
+  padding: .1rem;
+}
+
+
+.popCustom .text-uppercase {
+  text-transform: uppercase;
+}
+
+.popupCustom .live {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.popupCustom .live::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  height: 25px;
+  width: 25px;
+  margin: 1px;
+  bottom: 0px;
+  background-color: rgb(21, 126, 61);
+  animation: blink 2s linear 1s infinite forwards;
+  box-shadow: 0px 0px 3px 3px rgba(0, 87, 128, 0.863);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}

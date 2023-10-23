@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Management routes Render Operators 1`] = `
+<div>
+  <Suspense
+    fallback={<TableSkeleton />}
+  >
+    <lazy
+      data={Array []}
+    />
+  </Suspense>
+</div>
+`;
+
+exports[`Management routes Render buses 1`] = `
+<div>
+  <BusesTable />
+</div>
+`;
+
+exports[`Management routes Render companies 1`] = `
+<div>
+  Companies management
+</div>
+`;
+
+exports[`Management routes Render drivers 1`] = `
+<div>
+  <Suspense
+    fallback={<TableSkeleton />}
+  >
+    <lazy
+      data={Array []}
+    />
+  </Suspense>
+</div>
+`;
+
+exports[`Management routes Render routes 1`] = `
+<div>
+  <RouteTable
+    data={Array []}
+  />
+</div>
+`;

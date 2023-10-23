@@ -1,0 +1,9 @@
+node_modules
+.eslintcache
+coverage
+dist
+*.log
+
+#.vscode  ## This line has been changed to share the settings that are 
+# In VSCODE while using aliases. These settings allow path suggestions.
+

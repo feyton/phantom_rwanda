@@ -1,0 +1,279 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App test  Should render app 1`] = `
+<div
+  className="min-h-screen flex flex-col"
+>
+  <div
+    className="flex bg-background border-b-4 pb-4 sticky top-0 z-20"
+  >
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="Phantom"
+          className="w-44 xl:w-48 ml-8 xl:ml-20 mt-4"
+          src="phantom.png"
+        />
+      </a>
+    </div>
+    <div
+      className="hidden md:flex xl:flex ml-auto mr-20"
+    >
+      <a
+        href="/login"
+        onClick={[Function]}
+      >
+        <div>
+          <button
+            className="bg-primary hover:bg-hover text-white rounded-xl mt-5 ml-6 rounded-xl py-2 text-base md:text-sm px-5"
+            type="submit"
+          >
+            For operators
+          </button>
+        </div>
+      </a>
+      <a
+        href="/tracking-page"
+        onClick={[Function]}
+      >
+        <div>
+          <button
+            className="border border-primary bg-background hover:bg-hover2 text-primary rounded-xl mt-5 ml-6 px-6 rounded-xl py-2 text-base md:text-sm px-5"
+            type="submit"
+          >
+            track_bus
+          </button>
+        </div>
+      </a>
+      <div>
+        <select
+          className="bg-background border outline-none md:ml-6 lg:ml-6 xl:ml-6 mt-5 flex py-2 px-4 text-sm hover:font-bold"
+          onChange={[Function]}
+        >
+          <option
+            className=" border-none bg-background w-full cursor-pointer"
+            value="en"
+          >
+            English
+          </option>
+          <option
+            className=" border-none bg-background w-full cursor-pointer"
+            value="fr"
+          >
+            French
+          </option>
+          <option
+            className=" border-none bg-background cursor-pointer"
+            value="kn"
+          >
+            Kinyarwanda
+          </option>
+        </select>
+      </div>
+    </div>
+    <section
+      className="flex flex-col absolute right-0 bg-background px-2"
+    >
+      <button
+        className="md:hidden xl:hidden ml-auto mr-12 mt-5"
+        id="toggle"
+        onClick={[Function]}
+        type="button"
+      >
+        <div>
+          <div
+            className="undefined h-1 w-7 bg-primary mt-1"
+          />
+          <div
+            className="undefined h-1 w-7 bg-primary mt-1"
+          />
+          <div
+            className="undefined h-1 w-7 bg-primary mt-1"
+          />
+        </div>
+      </button>
+    </section>
+  </div>
+  <div>
+    <div>
+      <div
+        className="flex flex-col items-center lg:flex-row xl:flex-row"
+      >
+        <div>
+          <h1
+            className="flex flex-col text-3xl md:text-5xl xl:text-5xl font-raleway font-extrabold mx-12 xl:mx-28 mt-24 md:mt-32 xl:mt-32"
+          >
+            <span>
+              hero_head_1
+            </span>
+            <span
+              className="md:ml-10 ml-4"
+            >
+              hero_head_2
+            </span>
+          </h1>
+          <div
+            className="flex flex-col text-sm md:text-xl xl:text-base mx-20 md:ml-32 xl:ml-52 mt-10"
+          >
+            <p>
+              hero_text_1
+            </p>
+            <div>
+              <p
+                className="ml-4"
+              >
+                hero_text_2
+              </p>
+            </div>
+          </div>
+          <a
+            href="/tracking-page"
+            onClick={[Function]}
+          >
+            <div>
+              <button
+                className="bg-primary hover:bg-hover text-white rounded-3xl mt-12 px-12 xl:px-12 py-2 ml-28 md:ml-48 xl:ml-64 rounded-xl py-2 text-base md:text-sm px-5"
+                type="submit"
+              >
+                hero_btn
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          className="w-full px-20 lg:w-80 xl:w-96 lg:ml-auto xl:ml-auto lg:mr-36 xl:mr-36 lg:px-0 xl:px-0 mt-28"
+        >
+          <img
+            alt="Bus"
+            src="bus.png"
+          />
+        </div>
+      </div>
+      <div
+        className="flex flex-col items-center"
+      >
+        <h1
+          className="text-4xl font-raleway font-extrabold mt-28 xl:mt-44 mb-10 text-center"
+        >
+          how_it_work
+        </h1>
+        <div
+          className=" flex flex-col lg:flex-row xl:flex-row mt-12 mb-32"
+        >
+          <div
+            className="xl:justify-start xl:pt-2 border w-52 h-52 px-4 text-center flex flex-col justify-center items-center rounded-lg shadow-md"
+          >
+            <img
+              alt="start"
+              className="w-12 mt-4"
+              src="start.png"
+            />
+            <h3
+              className="font-raley mt-2 font-extrabold text-sm"
+            >
+              1. start
+            </h3>
+            <p
+              className="font-sans text-center text-sm my-2"
+            >
+              step_1_text
+            </p>
+          </div>
+          <div
+            className="my-28 lg:my-0 xl:my-0 lg:mx-32 xl:mx-32 border w-52 h-52 px-4 text-center flex flex-col justify-center items-center rounded-lg shadow-md"
+          >
+            <img
+              alt="locator"
+              className="w-12 mt-4"
+              src="locator.png"
+            />
+            <h3
+              className="font-raley mt-2 font-extrabold text-sm"
+            >
+              2. step_2
+            </h3>
+            <p
+              className="font-sans text-center text-sm my-2"
+            >
+              step_2_text
+            </p>
+          </div>
+          <div
+            className=" border w-52 h-52 px-4 text-center flex flex-col justify-center items-center rounded-lg shadow-md"
+          >
+            <img
+              alt="globe"
+              className="w-12 mt-4"
+              src="globe.svg"
+            />
+            <h3
+              className="font-raley mt-2 font-extrabold text-sm"
+            >
+              3. step_3
+            </h3>
+            <p
+              className="font-sans text-center text-sm my-2"
+            >
+              step_3_text
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    className="flex bg-primary z-20 xl:justify-center md:text-xl text-background font-sans font-sm py-8 lg:py-2 xl:py-2 mt-auto"
+  >
+    <div
+      className="flex flex-col lg:flex-row xl:flex-row px-12 text-center items-center"
+    >
+      <img
+        alt="Codebandits"
+        className="w-24 ml-2 lg:ml-8 lg:mt-4 xl:mt-2"
+        src="codebandits.png"
+      />
+      <h3
+        className="lg:ml-8 xl:ml-20 mt-6 xl:mt-2"
+      >
+        ©
+        copyrights
+         Codebandits 2022
+      </h3>
+    </div>
+    <div
+      className="flex flex-col md:text-xl lg:flex-row xl:flex-row lg:mt-7 xl:mt-3 mr-16 md:mx-20 xl:ml-20 ml-auto md:ml-auto"
+    >
+      <a
+        className="xl:ml-0 lg:ml-0 mt-2 text-md mb-4 hover:font-bold"
+        href="/"
+        onClick={[Function]}
+      >
+        Support
+      </a>
+      <a
+        className="xl:ml-28 lg:ml-12 mt-2 text-md mb-4 hover:font-bold"
+        href="/"
+        onClick={[Function]}
+      >
+        terms
+      </a>
+      <a
+        className="xl:ml-28 lg:ml-12 mt-2 text-md hover:font-bold"
+        href="/login"
+        onClick={[Function]}
+      >
+        administration
+      </a>
+    </div>
+  </footer>
+  <div
+    className="socket-state disconnected"
+  />
+  <div
+    className="Toastify"
+  />
+</div>
+`;

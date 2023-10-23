@@ -1,0 +1,278 @@
+{
+  "buses": [
+    {
+      "busType": "Minibus",
+      "company": "KBS",
+      "seats": "50",
+      "plateNumber": "RAT230A",
+      "driver": null,
+      "route": null,
+      "id": 5
+    },
+    {
+      "busType": "Minibus",
+      "company": "KBS",
+      "seats": "12",
+      "plateNumber": "RAB12343",
+      "driver": null,
+      "route": null,
+      "id": 6
+    },
+    {
+      "busType": "Coaster",
+      "company": "KBS",
+      "seats": "23",
+      "plateNumber": "RAB1234",
+      "driver": "Fabrice Hategekimana",
+      "route": null,
+      "id": 7
+    },
+    {
+      "busType": "Coaster",
+      "company": "KBS",
+      "seats": "34",
+      "plateNumber": "RAB1000",
+      "driver": "Muhire Girbert",
+      "route": null,
+      "id": 8
+    }
+  ],
+  "drivers": [
+    {
+      "id": 2,
+      "name": "Muhire Girbert",
+      "nationalid": "1199721772809249",
+      "mobileNumber": "0788251891",
+      "email": "ctruswell1@histats.com",
+      "license": "1195510237288508",
+      "address": "Kimihurura",
+      "assigned_bus": "RAB1000",
+      "assigned_route": null
+    },
+    {
+      "email": "driver@me.com",
+      "mobileNumber": "0788498955",
+      "company": "roy",
+      "address": "Nyamirambo",
+      "nationalid": "1199780030880040",
+      "license": "1199780030880040",
+      "name": "Fabrice Hategekimana",
+      "assigned_bus": null,
+      "assigned_route": null,
+      "id": 5
+    },
+    {
+      "email": "admin@me.com",
+      "mobileNumber": "0788498955",
+      "company": "cit",
+      "address": "Nyamirambo",
+      "nationalid": "1199780030880040",
+      "license": "1199780030880040",
+      "name": "FABRICE HAFASHIMANA",
+      "assigned_bus": "RAB1234",
+      "assigned_route": null,
+      "id": 6
+    },
+    {
+      "email": "admin@me.com",
+      "mobileNumber": "0788000000",
+      "company": "Select company",
+      "address": "Kigali",
+      "nationalid": "1199080030000040",
+      "license": "1199080030000040",
+      "name": "Fabrice Hafashimana",
+      "assigned_bus": null,
+      "assigned_route": null,
+      "id": 8
+    },
+    {
+      "email": "admin@me.com",
+      "mobileNumber": "0788000000",
+      "company": "Select company",
+      "address": "Kigali",
+      "nationalid": "1199080030000040",
+      "license": "1199080030000040",
+      "name": "Fabrice Hafashimana",
+      "assigned_bus": null,
+      "assigned_route": null,
+      "id": 11
+    }
+  ],
+  "routes": [
+    {
+      "destination1": "Kabuga",
+      "destination2": "DownTown",
+      "distance": "17km",
+      "total_buses": "100",
+      "id": 18
+    },
+    {
+      "destination1": "Kacyiru",
+      "destination2": "Kabuga",
+      "distance": "13km",
+      "total_buses": "100",
+      "id": 20
+    },
+    {
+      "destination1": "Kacyiru",
+      "destination2": "Nyabugogo",
+      "distance": "5km",
+      "total_buses": "100",
+      "id": 32
+    },
+    {
+      "destination1": "Kabuga",
+      "destination2": "Nyanza",
+      "distance": "22km",
+      "total_buses": "100",
+      "id": 35
+    },
+    {
+      "destination1": "Kabuga",
+      "destination2": "Nyabugogo",
+      "distance": "20km",
+      "total_buses": "100",
+      "id": 36
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Ivad",
+      "email": "driver@me.com",
+      "roles": {
+        "name": "driver",
+        "permissions": [
+          {
+            "driver": [
+              "get"
+            ],
+            "buses": [
+              "get"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "firstName": "Fabrice",
+      "email": "admin@me.com",
+      "roles": {
+        "name": "admin",
+        "permissions": [
+          {
+            "driver": [
+              "get",
+              "create",
+              "update",
+              "delete"
+            ],
+            "routes": [
+              "get",
+              "create",
+              "update",
+              "delete"
+            ],
+            "buses": [
+              "get",
+              "create",
+              "update",
+              "delete"
+            ],
+            "operator": [
+              "get",
+              "create",
+              "update",
+              "delete"
+            ],
+            "company": [
+              "get",
+              "create",
+              "update",
+              "delete"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "firstName": "Abdul",
+      "email": "operator@me.com",
+      "roles": {
+        "name": "operator",
+        "permissions": [
+          {
+            "driver": [
+              "get",
+              "create",
+              "update",
+              "delete"
+            ],
+            "routes": [
+              "get",
+              "create",
+              "update",
+              "delete"
+            ],
+            "buses": [
+              "get",
+              "create",
+              "update",
+              "delete"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "read": false,
+      "message": "You have been assigned a new bus",
+      "user": 1,
+      "category": "update"
+    },
+    {
+      "id": 2,
+      "read": true,
+      "message": "Your role has been changed",
+      "user": 1,
+      "category": "delete"
+    }
+  ],
+  "operators": [
+    {
+      "name": "Fabrice",
+      "id": 1
+    },
+    {
+      "name": "feyton",
+      "id": 2
+    }
+  ],
+  "companies": [
+    {
+      "name": "Kigali Bus Services",
+      "value": "KBS",
+      "buses": 20
+    },
+    {
+      "name": "Royal Express",
+      "value": "RYE",
+      "buses": 10
+    },
+    {
+      "name": "RFTC",
+      "value": "RFT",
+      "buses": 30
+    },
+    {
+      "name": "Virunga Express",
+      "value": "VRG",
+      "buses": 3
+    }
+  ]
+}

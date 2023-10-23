@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comming soon  Should render coming soon page 1`] = `
+<div
+  className="justify-self-center w-full h-full relative bg-gray-300 md:min-w-[300px] min-h-[300px] p-9"
+>
+  <div
+    className="flex flex-col items-center justify-center top-0 left-0 right-0 bottom-0"
+  >
+    <h2
+      className="text-xl font-bold text-primary  pb-5"
+    >
+      You tried to access 
+      <b
+        className="text-black"
+      >
+        &lt;&lt;undefined&gt;&gt;
+      </b>
+       but this page is...
+    </h2>
+    <h1
+      className="text-3xl font-bold pb-5"
+    >
+      Coming Soon
+    </h1>
+    <div
+      className="flex flex-row w-fit justify-between"
+    >
+      <a
+        className="bg-primary font-bold px-3 py-1 rounded-md mr-2"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <button
+        className="bg-transparent border-2 border-primary font-bold font-rale rounded-md px-3 py-1"
+        onClick={[Function]}
+      >
+        &lt;&lt; Back
+      </button>
+    </div>
+  </div>
+</div>
+`;

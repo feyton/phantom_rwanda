@@ -1,0 +1,1246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Manage Dropdown Should call the assign 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="z-10 font-sm"
+      >
+        <select
+          class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+          id="select"
+          name=""
+          role="select"
+        >
+          <option
+            hidden=""
+            value="manage"
+          >
+            Manage
+          </option>
+          <option
+            value="view"
+          >
+            View
+          </option>
+          <option
+            class="cursor-pointer font-raleway font-bold"
+            value="edit"
+          >
+            Edit
+          </option>
+          <option
+            class="cursor-pointer"
+            value="delete"
+          >
+            Delete
+          </option>
+          <option
+            class="cursor-pointer"
+            value="assign"
+          >
+            Assign bus
+          </option>
+          <option
+            class="cursor-pointer"
+            value="perm"
+          >
+            Permissions
+          </option>
+        </select>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="z-10 font-sm"
+    >
+      <select
+        class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+        id="select"
+        name=""
+        role="select"
+      >
+        <option
+          hidden=""
+          value="manage"
+        >
+          Manage
+        </option>
+        <option
+          value="view"
+        >
+          View
+        </option>
+        <option
+          class="cursor-pointer font-raleway font-bold"
+          value="edit"
+        >
+          Edit
+        </option>
+        <option
+          class="cursor-pointer"
+          value="delete"
+        >
+          Delete
+        </option>
+        <option
+          class="cursor-pointer"
+          value="assign"
+        >
+          Assign bus
+        </option>
+        <option
+          class="cursor-pointer"
+          value="perm"
+        >
+          Permissions
+        </option>
+      </select>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Manage Dropdown Should call the delete option 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body
+    class="swal2-shown swal2-height-auto"
+  >
+    <div
+      aria-hidden="true"
+    >
+      <div
+        class="z-10 font-sm"
+      >
+        <select
+          class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+          id="select"
+          name=""
+          role="select"
+        >
+          <option
+            hidden=""
+            value="manage"
+          >
+            Manage
+          </option>
+          <option
+            value="view"
+          >
+            View
+          </option>
+          <option
+            class="cursor-pointer font-raleway font-bold"
+            value="edit"
+          >
+            Edit
+          </option>
+          <option
+            class="cursor-pointer"
+            value="delete"
+          >
+            Delete
+          </option>
+          <option
+            class="cursor-pointer"
+            value="assign"
+          >
+            Assign bus
+          </option>
+          <option
+            class="cursor-pointer"
+            value="perm"
+          >
+            Permissions
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      class="swal2-container swal2-center swal2-backdrop-show"
+    >
+      <div
+        aria-describedby="swal2-html-container"
+        aria-labelledby="swal2-title"
+        aria-live="assertive"
+        aria-modal="true"
+        class="swal2-popup swal2-modal swal2-icon-warning"
+        role="dialog"
+        style="opacity: 0 !important; display: grid;"
+        tabindex="-1"
+      >
+        <button
+          aria-label="Close this dialog"
+          class="swal2-close"
+          style="display: none;"
+          type="button"
+        >
+          ×
+        </button>
+        <ul
+          class="swal2-progress-steps"
+          style="display: none;"
+        />
+        <div
+          class="swal2-icon swal2-warning swal2-icon-show"
+          style="display: flex;"
+        >
+          <div
+            class="swal2-icon-content"
+          >
+            !
+          </div>
+        </div>
+        <img
+          class="swal2-image"
+          style="display: none;"
+        />
+        <h2
+          class="swal2-title"
+          id="swal2-title"
+          style="display: block;"
+        >
+          Are you sure?
+        </h2>
+        <div
+          class="swal2-html-container"
+          id="swal2-html-container"
+          style="display: block;"
+        >
+          Driver 
+          <b>
+            Fabrice
+          </b>
+           will be deleted.
+        </div>
+        <input
+          class="swal2-input"
+          style="display: none;"
+        />
+        <input
+          class="swal2-file"
+          style="display: none;"
+          type="file"
+        />
+        <div
+          class="swal2-range"
+          style="display: none;"
+        >
+          <input
+            type="range"
+          />
+          <output />
+        </div>
+        <select
+          class="swal2-select"
+          style="display: none;"
+        />
+        <div
+          class="swal2-radio"
+          style="display: none;"
+        />
+        <label
+          class="swal2-checkbox"
+          for="swal2-checkbox"
+          style="display: none;"
+        >
+          <input
+            type="checkbox"
+          />
+          <span
+            class="swal2-label"
+          />
+        </label>
+        <textarea
+          class="swal2-textarea"
+          style="display: none;"
+        />
+        <div
+          class="swal2-validation-message"
+          id="swal2-validation-message"
+          style="display: none;"
+        />
+        <div
+          class="swal2-actions"
+          style="display: flex;"
+        >
+          <div
+            class="swal2-loader"
+          />
+          <button
+            aria-label=""
+            class="swal2-confirm swal2-styled swal2-default-outline"
+            style="display: inline-block; background-color: rgb(48, 133, 214);"
+            type="button"
+          >
+            Yes, delete!
+          </button>
+          <button
+            aria-label=""
+            class="swal2-deny swal2-styled"
+            style="display: none;"
+            type="button"
+          >
+            No
+          </button>
+          <button
+            aria-label=""
+            class="swal2-cancel swal2-styled swal2-default-outline"
+            style="display: inline-block; background-color: rgb(221, 51, 51);"
+            type="button"
+          >
+            Cancel
+          </button>
+        </div>
+        <div
+          class="swal2-footer"
+          style="display: none;"
+        />
+        <div
+          class="swal2-timer-progress-bar-container"
+        >
+          <div
+            class="swal2-timer-progress-bar"
+            style="display: none;"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div
+    aria-hidden="true"
+  >
+    <div
+      class="z-10 font-sm"
+    >
+      <select
+        class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+        id="select"
+        name=""
+        role="select"
+      >
+        <option
+          hidden=""
+          value="manage"
+        >
+          Manage
+        </option>
+        <option
+          value="view"
+        >
+          View
+        </option>
+        <option
+          class="cursor-pointer font-raleway font-bold"
+          value="edit"
+        >
+          Edit
+        </option>
+        <option
+          class="cursor-pointer"
+          value="delete"
+        >
+          Delete
+        </option>
+        <option
+          class="cursor-pointer"
+          value="assign"
+        >
+          Assign bus
+        </option>
+        <option
+          class="cursor-pointer"
+          value="perm"
+        >
+          Permissions
+        </option>
+      </select>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Manage Dropdown Should call the delete option 2`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body
+    class=""
+  >
+    <div>
+      <div
+        class="z-10 font-sm"
+      >
+        <select
+          class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+          id="select"
+          name=""
+          role="select"
+        >
+          <option
+            hidden=""
+            value="manage"
+          >
+            Manage
+          </option>
+          <option
+            value="view"
+          >
+            View
+          </option>
+          <option
+            class="cursor-pointer font-raleway font-bold"
+            value="edit"
+          >
+            Edit
+          </option>
+          <option
+            class="cursor-pointer"
+            value="delete"
+          >
+            Delete
+          </option>
+          <option
+            class="cursor-pointer"
+            value="assign"
+          >
+            Assign bus
+          </option>
+          <option
+            class="cursor-pointer"
+            value="perm"
+          >
+            Permissions
+          </option>
+        </select>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="z-10 font-sm"
+    >
+      <select
+        class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+        id="select"
+        name=""
+        role="select"
+      >
+        <option
+          hidden=""
+          value="manage"
+        >
+          Manage
+        </option>
+        <option
+          value="view"
+        >
+          View
+        </option>
+        <option
+          class="cursor-pointer font-raleway font-bold"
+          value="edit"
+        >
+          Edit
+        </option>
+        <option
+          class="cursor-pointer"
+          value="delete"
+        >
+          Delete
+        </option>
+        <option
+          class="cursor-pointer"
+          value="assign"
+        >
+          Assign bus
+        </option>
+        <option
+          class="cursor-pointer"
+          value="perm"
+        >
+          Permissions
+        </option>
+      </select>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Manage Dropdown Should call the edit 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="z-10 font-sm"
+      >
+        <select
+          class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+          id="select"
+          name=""
+          role="select"
+        >
+          <option
+            hidden=""
+            value="manage"
+          >
+            Manage
+          </option>
+          <option
+            value="view"
+          >
+            View
+          </option>
+          <option
+            class="cursor-pointer font-raleway font-bold"
+            value="edit"
+          >
+            Edit
+          </option>
+          <option
+            class="cursor-pointer"
+            value="delete"
+          >
+            Delete
+          </option>
+          <option
+            class="cursor-pointer"
+            value="assign"
+          >
+            Assign bus
+          </option>
+          <option
+            class="cursor-pointer"
+            value="perm"
+          >
+            Permissions
+          </option>
+        </select>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="z-10 font-sm"
+    >
+      <select
+        class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+        id="select"
+        name=""
+        role="select"
+      >
+        <option
+          hidden=""
+          value="manage"
+        >
+          Manage
+        </option>
+        <option
+          value="view"
+        >
+          View
+        </option>
+        <option
+          class="cursor-pointer font-raleway font-bold"
+          value="edit"
+        >
+          Edit
+        </option>
+        <option
+          class="cursor-pointer"
+          value="delete"
+        >
+          Delete
+        </option>
+        <option
+          class="cursor-pointer"
+          value="assign"
+        >
+          Assign bus
+        </option>
+        <option
+          class="cursor-pointer"
+          value="perm"
+        >
+          Permissions
+        </option>
+      </select>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Manage Dropdown Should call the permissions 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="z-10 font-sm"
+      >
+        <select
+          class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+          id="select"
+          name=""
+          role="select"
+        >
+          <option
+            hidden=""
+            value="manage"
+          >
+            Manage
+          </option>
+          <option
+            value="view"
+          >
+            View
+          </option>
+          <option
+            class="cursor-pointer font-raleway font-bold"
+            value="edit"
+          >
+            Edit
+          </option>
+          <option
+            class="cursor-pointer"
+            value="delete"
+          >
+            Delete
+          </option>
+          <option
+            class="cursor-pointer"
+            value="assign"
+          >
+            Assign bus
+          </option>
+          <option
+            class="cursor-pointer"
+            value="perm"
+          >
+            Permissions
+          </option>
+        </select>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="z-10 font-sm"
+    >
+      <select
+        class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+        id="select"
+        name=""
+        role="select"
+      >
+        <option
+          hidden=""
+          value="manage"
+        >
+          Manage
+        </option>
+        <option
+          value="view"
+        >
+          View
+        </option>
+        <option
+          class="cursor-pointer font-raleway font-bold"
+          value="edit"
+        >
+          Edit
+        </option>
+        <option
+          class="cursor-pointer"
+          value="delete"
+        >
+          Delete
+        </option>
+        <option
+          class="cursor-pointer"
+          value="assign"
+        >
+          Assign bus
+        </option>
+        <option
+          class="cursor-pointer"
+          value="perm"
+        >
+          Permissions
+        </option>
+      </select>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Manage Dropdown Should render the dropdown 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="z-10 font-sm"
+      >
+        <select
+          class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+          id="select"
+          name=""
+          role="select"
+        >
+          <option
+            hidden=""
+            value="manage"
+          >
+            Manage
+          </option>
+          <option
+            value="view"
+          >
+            View
+          </option>
+          <option
+            class="cursor-pointer font-raleway font-bold"
+            value="edit"
+          >
+            Edit
+          </option>
+          <option
+            class="cursor-pointer"
+            value="delete"
+          >
+            Delete
+          </option>
+          <option
+            class="cursor-pointer"
+            value="assign"
+          >
+            Assign bus
+          </option>
+          <option
+            class="cursor-pointer"
+            value="perm"
+          >
+            Permissions
+          </option>
+        </select>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="z-10 font-sm"
+    >
+      <select
+        class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+        id="select"
+        name=""
+        role="select"
+      >
+        <option
+          hidden=""
+          value="manage"
+        >
+          Manage
+        </option>
+        <option
+          value="view"
+        >
+          View
+        </option>
+        <option
+          class="cursor-pointer font-raleway font-bold"
+          value="edit"
+        >
+          Edit
+        </option>
+        <option
+          class="cursor-pointer"
+          value="delete"
+        >
+          Delete
+        </option>
+        <option
+          class="cursor-pointer"
+          value="assign"
+        >
+          Assign bus
+        </option>
+        <option
+          class="cursor-pointer"
+          value="perm"
+        >
+          Permissions
+        </option>
+      </select>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Manage Dropdown Should render the dropdown with change bus 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body
+    class=""
+  >
+    <div>
+      <div
+        class="z-10 font-sm"
+      >
+        <select
+          class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+          id="select"
+          name=""
+          role="select"
+        >
+          <option
+            hidden=""
+            value="manage"
+          >
+            Manage
+          </option>
+          <option
+            value="view"
+          >
+            View
+          </option>
+          <option
+            class="cursor-pointer font-raleway font-bold"
+            value="edit"
+          >
+            Edit
+          </option>
+          <option
+            class="cursor-pointer"
+            value="delete"
+          >
+            Delete
+          </option>
+          <option
+            class="cursor-pointer"
+            value="assign"
+          >
+            Assign bus
+          </option>
+          <option
+            class="cursor-pointer"
+            value="perm"
+          >
+            Permissions
+          </option>
+        </select>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="z-10 font-sm"
+    >
+      <select
+        class="py-1 px-1 font-rale font-bold bg-transparent border rounded-sm"
+        id="select"
+        name=""
+        role="select"
+      >
+        <option
+          hidden=""
+          value="manage"
+        >
+          Manage
+        </option>
+        <option
+          value="view"
+        >
+          View
+        </option>
+        <option
+          class="cursor-pointer font-raleway font-bold"
+          value="edit"
+        >
+          Edit
+        </option>
+        <option
+          class="cursor-pointer"
+          value="delete"
+        >
+          Delete
+        </option>
+        <option
+          class="cursor-pointer"
+          value="assign"
+        >
+          Assign bus
+        </option>
+        <option
+          class="cursor-pointer"
+          value="perm"
+        >
+          Permissions
+        </option>
+      </select>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

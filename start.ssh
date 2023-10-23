@@ -1,0 +1,4 @@
+code ./server 
+code ./client
+cd ./server
+yarn all 

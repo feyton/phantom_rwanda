@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Component Should render a form Componet 1`] = `
+<div
+  className="py-0  md:flex md:justify-center pt-3"
+>
+  <div
+    className="block bg-white rounded  p-2 w-full lg:max-w-3xl shadow-lg min-h-[70vh] mr-4"
+  >
+    <div
+      className="py-4 px-8 text-black font-bold lg:px-4 md:px-4 "
+    >
+      <h1
+        className="text-center  text-2xl  font-raleway font-bold md:ml-0 md:text-left"
+      >
+         
+      </h1>
+    </div>
+    <form
+      id="form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="py-4 px-4  w-full  lg:mx-auto "
+      >
+        <div
+          className="flex justify-center align"
+        >
+          <div>
+            <button
+              className="undefined bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl m-2 "
+              type="submit"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Render the update render the update driver 1`] = `
+<div>
+  <div
+    className="flex lg:mx-24 xl:mx-24 border rounded-xl my-8"
+  >
+    <div>
+      <img
+        alt="bus"
+        className="hidden lg:flex xl:flex h-full rounded-l-xl object-cover"
+        src="bus2.jpg"
+      />
+    </div>
+    <div
+      className="mx-12 w-full"
+    >
+      <h1
+        className="font-raleway font-bold my-8 text-2xl"
+      >
+        Update Driver Profile
+      </h1>
+      <form
+        className="flex flex-col items-center"
+        onSubmit={[Function]}
+      >
+        <div
+          className="flex flex-col lg:flex-row xl:flex-row"
+        >
+          <div
+            className="lg:mr-4 xl:mr-4 lg:w-96 xl:w-96"
+          >
+            <ForwardRef
+              labelName="First Name"
+              name="firstName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter the first name"
+              type="text"
+            />
+            <div
+              className="h-8"
+            />
+            <ForwardRef
+              labelName="mobile number"
+              name="mobileNumber"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter the mobile number"
+              type="text"
+            />
+            <div
+              className="h-8"
+            />
+            <ForwardRef
+              labelName="Address"
+              name="address"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter the address"
+              type="text"
+            />
+            <div
+              className="h-8"
+            />
+          </div>
+          <div
+            className="lg:ml-4 xl:ml-4 lg:w-96 xl:w-96"
+          >
+            <ForwardRef
+              labelName="Last name"
+              name="lastName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter the Last name"
+              type="text"
+            />
+            <div
+              className="h-8"
+            />
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="Company"
+              >
+                Company
+              </label>
+              <select
+                className="border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden mb-1"
+                id="company"
+                name="company"
+                onBlur={[Function]}
+                onChange={[Function]}
+              >
+                <option
+                  hidden={true}
+                >
+                  Select Company
+                </option>
+                <option
+                  value="RFTC"
+                >
+                  RFTC
+                </option>
+                <option
+                  value="KBS"
+                >
+                  KBS
+                </option>
+                <option
+                  value="ROY"
+                >
+                  Royal
+                </option>
+              </select>
+            </div>
+            <div
+              className="h-8"
+            />
+            <ForwardRef
+              labelName="National ID"
+              name="nationalID"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter the National ID"
+              type="text"
+            />
+            <div
+              className="h-8"
+            />
+          </div>
+        </div>
+        <ForwardRef
+          labelName="Driver license"
+          name="driverLicense"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Enter the Driver license"
+          type="text"
+        />
+        <div
+          className="h-8"
+        />
+        <Button
+          name="Update"
+          styles="bg-primary mb-8 text-background py-2"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render the update render the update operator 1`] = `
+<div>
+  <div
+    className="flex lg:mx-24 xl:mx-24 border rounded-xl my-8"
+  >
+    <div>
+      <img
+        alt="bus"
+        className="hidden lg:flex xl:flex h-full rounded-l-xl object-cover"
+        src="bus2.jpg"
+      />
+    </div>
+    <div
+      className="mx-12 w-full"
+    >
+      <h1
+        className="font-raleway font-bold my-8 text-2xl"
+      >
+        Update Operator Profile
+      </h1>
+      <form
+        className="flex flex-col items-center"
+        onSubmit={[Function]}
+      >
+        <div
+          className="flex flex-col items-center lg:flex-row xl:flex-row"
+        >
+          <div
+            className="lg:mr-4 xl:mr-4 lg:w-96 xl:w-96"
+          >
+            <ForwardRef
+              labelName="First Name"
+              name="firstName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter the first name"
+              type="text"
+            />
+            <div
+              className="h-8"
+            />
+            <ForwardRef
+              labelName="mobile number"
+              name="mobileNumber"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter the mobile number"
+              type="text"
+            />
+            <div
+              className="h-8"
+            />
+            <ForwardRef
+              labelName="Address"
+              name="address"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter the address"
+              type="text"
+            />
+            <div
+              className="h-8"
+            />
+          </div>
+          <div
+            className="lg:ml-4 xl:ml-4 lg:w-96 xl:w-96"
+          >
+            <ForwardRef
+              labelName="Last name"
+              name="lastName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter the Last name"
+              type="text"
+            />
+            <div
+              className="h-8"
+            />
+            <div
+              className="mb-2 block font-raleway"
+            >
+              <label
+                className="block text-grey-darker text-sm font-bold font-rale  mb-2"
+                htmlFor="Company"
+              >
+                Company
+              </label>
+              <select
+                className="border font-rale rounded w-full py-2 px-3 text-grey-darker bg-gray-200 text-md outline-hidden mb-1"
+                id="company"
+                name="company"
+                onBlur={[Function]}
+                onChange={[Function]}
+              >
+                <option
+                  hidden={true}
+                >
+                  Select Company
+                </option>
+                <option
+                  value=""
+                >
+                  RFTC
+                </option>
+                <option
+                  value=""
+                >
+                  KBS
+                </option>
+                <option
+                  value=""
+                >
+                  Royal
+                </option>
+              </select>
+            </div>
+            <div
+              className="h-8"
+            />
+            <ForwardRef
+              labelName="National ID"
+              name="nationalID"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter the National ID"
+              type="text"
+            />
+            <div
+              className="h-8"
+            />
+          </div>
+        </div>
+        <div
+          className="h-8"
+        />
+        <Button
+          name="Update"
+          styles="bg-primary mb-8 text-background py-2"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+`;
