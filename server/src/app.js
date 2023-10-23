@@ -21,6 +21,7 @@ import apiRouter from './routes/apiRouter.js';
 import { BusRepository } from './simulateApp/models.js';
 import Trip from './tripApp/models.js';
 import errLogger from './utils/errorLogger.js';
+import connect from './configs/mongo.js';
 
 const swaggerSpec = swaggerJSDoc(options);
 const __dirname = path.resolve();
@@ -178,11 +179,13 @@ server.start().then(() => {
 // TODO REFACTORING
 AppDataSource.initialize()
 	.then(async () => {
-		logger.info('Postgres database connected');
+		connect.then(()=>{
+			logger.info('Postgres database connected');
 		app.listen({ port: PORT }, () => {
 			app.emit('started');
 			logger.info(`app is listening on port ${PORT}`);
 		});
+		})
 	})
 	.catch((_error) => {
 		/* c8 ignore next 6 */
