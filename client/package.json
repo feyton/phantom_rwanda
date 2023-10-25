@@ -1,5 +1,5 @@
 {
-  "name": "phantom-fe-codebandits",
+  "name": "phantom-client",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,6 @@
   "scripts": {
     "start": "webpack serve",
     "build": "cross-env NODE_ENV=production  webpack",
-    "prepare": "husky install",
     "format": "npx pretty-quick",
     "lint": "npx eslint src/*.j{s,sx} --fix",
     "test": "jest --watch",

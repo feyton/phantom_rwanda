@@ -29,17 +29,25 @@ const schema = gql`
 	type Transaction {
 		id: ID!
 		transaction_type_id: Int!
-		transaction_id: String
-		amount: String
-		status: String
-		payment_mode: String
-		tx_type: String
-		balance_before: String
-		balance_after: String
-		tx_date: String
-		tx_time: String
-		name: String
+		transaction_id: Int!
+		account_id: Int!
+		account_type_id: Int!
+		account_number: String!
+		tx_type: String!
+		amount: Float!
+		balance_before: Float!
+		balance_after: Float!
+		status: String!
+		tx_date: String!
+		tx_time: Time!
+		created_at: String!
+		updated_at: String!
+		name: String!
 	}
+
+	scalar Date
+	scalar Time
+	scalar DateTime
 
 	type Road {
 		id: ID!
@@ -49,6 +57,8 @@ const schema = gql`
 		park2: BusPark!
 		stops: [BusStop]
 		buses: [Bus]
+		fare: Int
+		details: String
 	}
 
 	type BusStop {
@@ -56,6 +66,8 @@ const schema = gql`
 		name: String!
 		roads: [Road]
 		location: Point
+		details: String
+		pictures: [String]
 	}
 	type Point {
 		latitude: Float!
@@ -67,6 +79,8 @@ const schema = gql`
 		name: String!
 		roads: [Road]
 		location: Point
+		details: String
+		pictures: [String]
 	}
 
 	type Bus {
@@ -120,6 +134,8 @@ const schema = gql`
 	input BusParkInput {
 		name: String!
 		location: PointInput!
+		details: String
+		pictures: [String]
 	}
 
 	input RoadInput {
@@ -128,11 +144,14 @@ const schema = gql`
 		park1: ID!
 		park2: ID!
 		busStopIds: [ID]
+		fare: Int
 	}
 
 	input BusStopInput {
 		name: String!
 		location: PointInput!
+		details: String
+		pictures: [String]
 	}
 
 	input PointInput {
@@ -143,10 +162,17 @@ const schema = gql`
 	type Mutation {
 		addBalance(input: LoadBalanceInput!): BalancePayment
 	}
+	input GetTransactionsInput {
+		account_number: String
+		card_number: String
+	}
 	type Query {
 		getBusParks: [BusPark]
 		getRoads: [Road]
 		getBusStops: [BusStop]
+		getCardProfile(cardNumber: String!): CardProfile!
+		getCardTransactions(input: GetTransactionsInput!): [Transaction]
+		getRoad(id: ID!): Road!
 	}
 	type Query {
 		getClosestBusStop(
@@ -167,6 +193,50 @@ const schema = gql`
 		roadId: ID!
 		addBusStops: [ID] # Array of BusStop IDs to add
 		removeBusStops: [ID] # Array of BusStop IDs to remove
+	}
+
+	type BusCard {
+		name: String
+		number: String!
+		account_number: String
+		id: ID
+		user: User
+		phone: String!
+		email: String
+	}
+
+	type User {
+		name: String!
+		email: String!
+		phone: String
+		role: String!
+		photo: String!
+		active: String
+		cards: [BusCard]
+		last_login: String
+	}
+	type Login {
+		token: String!
+		user: User!
+	}
+
+	input LoginInput {
+		email: String!
+		id: String!
+		photo: String!
+		familyName: String!
+		givenName: String!
+		name: String!
+	}
+	input AddCard {
+		number: String!
+		phone: String!
+		email: String!
+	}
+
+	type Mutation {
+		loginUser(input: LoginInput!): Login!
+		addCard(input: AddCard!): BusCard!
 	}
 `;
 

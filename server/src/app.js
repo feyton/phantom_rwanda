@@ -1,3 +1,4 @@
+import { ApolloServer } from 'apollo-server-express';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import 'dotenv/config';
@@ -6,9 +7,9 @@ import path from 'path';
 import { Server } from 'socket.io';
 import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
-import { ApolloServer } from 'apollo-server-express';
 import corsOptions from './configs/cors.js';
 import i18n from './configs/i18n.js';
+import connect from './configs/mongo.js';
 import reqLogger from './configs/reqLogger.js';
 import options, { customizationOptions } from './configs/swagger.js';
 import logger from './configs/winston.js';
@@ -21,7 +22,6 @@ import apiRouter from './routes/apiRouter.js';
 import { BusRepository } from './simulateApp/models.js';
 import Trip from './tripApp/models.js';
 import errLogger from './utils/errorLogger.js';
-import connect from './configs/mongo.js';
 
 const swaggerSpec = swaggerJSDoc(options);
 const __dirname = path.resolve();
@@ -179,13 +179,18 @@ server.start().then(() => {
 // TODO REFACTORING
 AppDataSource.initialize()
 	.then(async () => {
-		connect.then(()=>{
-			logger.info('Postgres database connected');
-		app.listen({ port: PORT }, () => {
-			app.emit('started');
-			logger.info(`app is listening on port ${PORT}`);
-		});
-		})
+		connect
+			.then(() => {
+				logger.info('Postgres database connected');
+				app.listen({ port: PORT }, () => {
+					app.emit('started');
+					logger.info(`app is listening on port ${PORT}`);
+				});
+			})
+			.catch((e) => {
+				console.log('Unable to connect to mongo');
+				console.log(e);
+			});
 	})
 	.catch((_error) => {
 		/* c8 ignore next 6 */

@@ -8,8 +8,6 @@ yarn build
 printf "\n Updating the backend part\n"
 cd ../server
 yarn
-yarn build
-printf "\n Building and copy the build\n"
 cd ..
 cp client/dist server/ -r
 printf "Restarting the server \n"
