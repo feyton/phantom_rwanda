@@ -23,6 +23,7 @@ const fetchBalance = async (cardNumber) => {
 
 		return data?.data;
 	} catch (error) {
+		console.log(error);
 		return { cardNumber: 'Card is not valid' };
 	}
 };
@@ -61,7 +62,6 @@ export const getCardProfileAsync = async (number) => {
 		const { data } = response.data;
 		return data;
 	} catch (error) {
-		console.log(error);
 		return null;
 	}
 };
@@ -72,7 +72,6 @@ export const getCardTransactionsAsync = async ({
 }) => {
 	if (card_number) {
 		const cardProfile = await getCardProfileAsync(card_number);
-		console.log(cardProfile);
 		try {
 			const response = await axiosBase.get(
 				'https://prod.safaribus.rw/nxfinance/api/v1/getAccountTransactions?account_number=' +
@@ -84,7 +83,7 @@ export const getCardTransactionsAsync = async ({
 			const { data } = response.data;
 			return data;
 		} catch (error) {
-			console.log(error);
+			// console.log(error);
 			return null;
 		}
 	}

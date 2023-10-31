@@ -11,6 +11,7 @@ yarn
 cd ..
 cp client/dist server/ -r
 printf "Restarting the server \n"
+docker restart phantom-redis
 pm2 restart phantom
 pm2 save
 printf "\nUpdate has been completed\n"

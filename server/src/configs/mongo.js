@@ -3,6 +3,6 @@ import mongoose from 'mongoose';
 
 const uri = process.env.MONGO_URL || '';
 
-const connect = mongoose.connect(uri, {});
+const connect = mongoose.connect(uri, { autoIndex: true });
 
 export default connect;

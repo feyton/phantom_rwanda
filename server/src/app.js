@@ -22,6 +22,7 @@ import apiRouter from './routes/apiRouter.js';
 import { BusRepository } from './simulateApp/models.js';
 import Trip from './tripApp/models.js';
 import errLogger from './utils/errorLogger.js';
+import { jwtMiddleWare } from './middlewares/authJwt.js';
 
 const swaggerSpec = swaggerJSDoc(options);
 const __dirname = path.resolve();
@@ -38,6 +39,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.urlencoded({ extended: true }));
 app.use(i18n.init);
+app.use(
+	jwtMiddleWare
+);
 
 app.use('/api/v1', apiRouter);
 
@@ -182,7 +186,7 @@ AppDataSource.initialize()
 		connect
 			.then(() => {
 				logger.info('Postgres database connected');
-				app.listen({ port: PORT }, () => {
+				app.listen({ port: PORT,  }, () => {
 					app.emit('started');
 					logger.info(`app is listening on port ${PORT}`);
 				});

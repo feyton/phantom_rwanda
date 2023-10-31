@@ -173,6 +173,7 @@ const schema = gql`
 		getCardProfile(cardNumber: String!): CardProfile!
 		getCardTransactions(input: GetTransactionsInput!): [Transaction]
 		getRoad(id: ID!): Road!
+		getUserCards: [BusCard]
 	}
 	type Query {
 		getClosestBusStop(
@@ -199,10 +200,12 @@ const schema = gql`
 		name: String
 		number: String!
 		account_number: String
-		id: ID
+		id: ID!
 		user: User
 		phone: String!
 		email: String
+		balance: Int
+		transactions: [Transaction]
 	}
 
 	type User {
@@ -214,6 +217,7 @@ const schema = gql`
 		active: String
 		cards: [BusCard]
 		last_login: String
+		id: ID!
 	}
 	type Login {
 		token: String!
@@ -227,6 +231,7 @@ const schema = gql`
 		familyName: String!
 		givenName: String!
 		name: String!
+		serverAuthCode: String!
 	}
 	input AddCard {
 		number: String!

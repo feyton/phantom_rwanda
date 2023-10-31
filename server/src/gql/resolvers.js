@@ -10,7 +10,10 @@ import fetchBalance, {
 import { BusCard, BusPark, BusStop, Road, User } from './models/index.js';
 
 const SECRET = process.env.ACCESS_TOKEN_SECRET;
-const client = new OAuth2Client();
+const oAuthClient = new OAuth2Client({
+	clientId: process.env.CLIENT_ID,
+	clientSecret: process.env.CLIENT_SECRET,
+});
 
 const resolvers = {
 	Query: {
@@ -53,13 +56,6 @@ const resolvers = {
 			// Determine the roads that pass through the closest bus stop
 			const roads = await Road.find({
 				$or: [{ park1: destinationBusParkId }, { park2: destinationBusParkId }],
-			});
-			console.log({
-				...closestBusStop._doc,
-				location: {
-					latitude: closestBusStop.location.coordinates[0],
-					longitude: closestBusStop.location.coordinates[1],
-				},
 			});
 
 			return {
@@ -115,7 +111,14 @@ const resolvers = {
 				account_number: args?.input?.account_number,
 				card_number: args?.input?.card_number,
 			});
-			return transactions?.reverse();
+
+			return transactions;
+		},
+		getUserCards: async (_, args, context) => {
+			const { userId, role } = context;
+			if (userId === null) throw new ApolloError('Not Logged In', 401);
+			const cards = await BusCard.find({ user: context.userId });
+			return cards;
 		},
 	},
 	Mutation: {
@@ -256,13 +259,25 @@ const resolvers = {
 		},
 		loginUser: async (_, args, context) => {
 			const { input } = args;
-			const { email, photo, familyName, givenName, name, id } = input;
-			console.log(args);
+			const { email, photo, familyName, givenName, name, id, serverAuthCode } =
+				input;
+			// try {
+			// 	const { tokens } = await oAuthClient.getToken(serverAuthCode);
+			// 	const ticket = await oAuthClient.verifyIdToken({
+			// 		idToken: tokens.access_token,
+			// 		audience: process.env.CLIENT_ID,
+			// 	});
+
+			// 	if (!ticket) throw new ApolloError('Invalid Token', 400);
+			// 	console.log(ticket);
+			// } catch (error) {
+			// 	console.log(error);
+			// }
 			if (!email && !id) throw new ApolloError('WRONG_CRED', '400');
 			if (id) {
 				try {
 					// @ts-ignore
-					const res = await User.findOneAndUpdate(
+					const user = await User.findOneAndUpdate(
 						{
 							email: email,
 							googleId: id,
@@ -277,21 +292,19 @@ const resolvers = {
 						{
 							upsert: true,
 							new: true,
-							rawResult: true,
 						}
 					);
-					const user = res.value;
 					if (user?.active === false)
 						throw new ApolloError('Account not active', 'INACTIVE');
+					const userString = JSON.stringify({
+						userId: user.id,
+						role: user.role,
+					});
 
 					const accessToken = jwt.sign(
-						{
-							userId: user?.id,
-							role: user?.role,
-						},
-						// @ts-ignore
-						SECRET,
-						{ expiresIn: '14d' }
+						{ user: userString },
+						process.env.ACCESS_TOKEN_SECRET,
+						{ expiresIn: '7d' }
 					);
 
 					return {
@@ -299,33 +312,64 @@ const resolvers = {
 						user: user?.toJSON(),
 					};
 				} catch (error) {
-					console.log(error);
 					throw new Error(error.message);
 				}
 			}
 
 			throw new ApolloError('Only Google Login Now');
 		},
-		addCard: async (_, args, { userId }) => {
+		addCard: async (_, args, context) => {
 			const { input } = args;
+			const { userId } = context;
+			if (userId === null) throw new ApolloError('Not Logged In', 401);
 			const response = await getCardProfileAsync(args.input.number);
-			if (!response) throw new ApolloError('Card Does Not Exists');
+			if (!response) throw new ApolloError(404, 'Card Does Not Exists');
 			const user = await User.findById(userId);
+			const cardExist = await BusCard.exists({
+				user: userId,
+				number: args.input.number,
+			});
+			if (cardExist) throw new ApolloError('Card Exists', 400);
+
 			if (user) {
 				const cardInfo = await BusCard.create({
 					...args.input,
 					...response,
 					phone: input.phone,
 					email: user.email,
+					user: userId,
+					name: response.account_name,
 				});
 				return cardInfo;
 			}
-			return {
-				...response,
-				number: input.number,
-				phone: input.phone,
-				email: input.email,
-			};
+			throw new ApolloError(404, 'User Not Found');
+		},
+	},
+	BusCard: {
+		balance: async (parent, args, context) => {
+			const { number } = parent;
+			const balance = await fetchBalance(number);
+			console.log(balance);
+			if (balance == null) {
+				const tx = await getCardTransactionsAsync({
+					account_number: parent.account_number,
+				});
+				const bal = tx[-1];
+				return parseInt(bal.current_balance);
+			}
+			return balance.current_balance;
+		},
+		transactions: async (parent, args, context) => {
+			const transactions = await getCardTransactionsAsync({
+				account_number: parent.account_number,
+			});
+			return transactions?.reverse();
+		},
+	},
+	User: {
+		cards: async (parent, args, context) => {
+			const cards = await BusCard.find({ user: parent.id });
+			return cards;
 		},
 	},
 };

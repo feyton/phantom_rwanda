@@ -1,5 +1,13 @@
 import mongoose from 'mongoose';
 
+mongoose.set('toJSON', {
+	virtuals: true,
+	versionKey: false,
+	transform: function (doc, ret) {
+		delete ret._id;
+	},
+});
+
 const UserSchema = new mongoose.Schema({
 	name: {
 		type: String,
@@ -80,6 +88,8 @@ const BusCardSchema = new mongoose.Schema({
 	},
 	email: String,
 });
+
+BusCardSchema.index({ number: 1, user: 1 }, { unique: true });
 
 const busStopSchema = new mongoose.Schema({
 	name: {
