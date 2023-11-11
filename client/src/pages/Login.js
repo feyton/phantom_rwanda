@@ -1,6 +1,9 @@
+import { gql, useApolloClient, useMutation } from '@apollo/client';
+import { GoogleLogin } from '@react-oauth/google';
 import { axiosBase as axios } from '@utils/Api.js';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -8,14 +11,51 @@ import busMapImg from '../assets/busMap.png';
 import { ButtonLoading } from '../components/Button.js';
 import { loginUser } from '../redux/reducers/authReducer.js';
 
+export const LOGIN_MUTATION = gql`
+  mutation LoginUser($input: LoginInput!) {
+    loginUser(input: $input) {
+      token
+      user {
+        name
+        photo
+        email
+        role
+      }
+    }
+  }
+`;
+
 const Login = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const location = useLocation();
   const dispatch = useDispatch();
   const [err, setErr] = useState('');
   const [attempts, setAttempts] = useState(0);
   const [loading, setLoading] = useState(false);
   const [passwordShown, setPasswordShown] = useState(false);
+  const [LoginUser, { loading: loginLoading }] = useMutation(LOGIN_MUTATION);
+  const client = useApolloClient();
+
+  const handleLogin = async (googleData) => {
+    console.log(googleData);
+    const { data } = await LoginUser({
+      variables: {
+        input: { token: googleData.credential }
+      }
+    });
+    dispatch(loginUser(data.loginUser));
+    navigate(from);
+    toast.success('Login successful');
+    await client.resetStore();
+    return;
+    // store returned user somehow
+  };
+  const onFailure = () => {
+    toast.error(
+      'Login process was not successful. Refresh the page and try again'
+    );
+  };
   let from = location?.state || '/dashboard/main';
   const {
     register,
@@ -127,11 +167,20 @@ const Login = () => {
               {errors?.password && errors.password.message}
             </p>
             <div>
-              <input onChange={(e)=>togglePassword(e)} type="checkbox" name="" id="show" />
-              <label className='font-raleway font-bold mx-1 text-sm' htmlFor="show">Show password</label>
+              <input
+                onChange={(e) => togglePassword(e)}
+                type="checkbox"
+                name=""
+                id="show"
+              />
+              <label
+                className="font-raleway font-bold mx-1 text-sm"
+                htmlFor="show"
+              >
+                Show password
+              </label>
             </div>
 
-           
             <Link to="/accounts/reset-password">
               <h4 className="text-primary text-right mb-5 text-sm font-bold">
                 Forgot password?
@@ -159,6 +208,16 @@ const Login = () => {
                     Login
                   </button>
                 )}
+                <GoogleLogin
+                  clientId={process.env.CLIENT_ID}
+                  text={
+                    loginLoading ? t('Loading....') : t('Log in with Google')
+                  }
+                  onSuccess={handleLogin}
+                  onFailure={onFailure}
+                  cookiePolicy={'single_host_origin'}
+                  useOneTap
+                />
               </>
             )}
           </form>

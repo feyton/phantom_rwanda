@@ -166,6 +166,7 @@ const resolvers = {
 				park2: input.park2,
 				stops: input.busStopIds,
 				fare: input.fare,
+				details: input.details
 			});
 
 			try {
@@ -181,6 +182,7 @@ const resolvers = {
 		},
 
 		createBusStop: async (_, { input }) => {
+			console.log(input)
 			const newBusStop = new BusStop({
 				name: input.name,
 				location: {
@@ -261,6 +263,53 @@ const resolvers = {
 			const { input } = args;
 			const { email, photo, familyName, givenName, name, id, serverAuthCode } =
 				input;
+			if (input.token) {
+				const { token } = input;
+				try {
+					const ticket = await oAuthClient.verifyIdToken({
+						idToken: token,
+						audience: process.env.CLIENT_ID,
+					});
+					if (!ticket) throw new Error('The token is invalid');
+					const { name, email, picture, given_name, family_name } =
+						ticket.getPayload();
+					console.log(ticket);
+					// @ts-ignore
+					const user = await User.findOneAndUpdate(
+						{
+							email: email,
+						},
+						{
+							name: name,
+							last_login: new Date(),
+							givenName: name.split('')[0],
+							familyName: name.split('')[1],
+							photo: picture,
+						},
+						{
+							upsert: true,
+							new: true,
+						}
+					);
+					if (user?.active === false)
+						throw new ApolloError('Account not active', 'INACTIVE');
+					const userString = JSON.stringify({
+						userId: user.id,
+						role: user.role,
+					});
+
+					const accessToken = jwt.sign(
+						{ user: userString },
+						process.env.ACCESS_TOKEN_SECRET,
+						{ expiresIn: '7d' }
+					);
+
+					return {
+						token: accessToken,
+						user: user?.toJSON(),
+					};
+				} catch (error) {}
+			}
 			// try {
 			// 	const { tokens } = await oAuthClient.getToken(serverAuthCode);
 			// 	const ticket = await oAuthClient.verifyIdToken({

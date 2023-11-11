@@ -145,6 +145,7 @@ const schema = gql`
 		park2: ID!
 		busStopIds: [ID]
 		fare: Int
+		details: String
 	}
 
 	input BusStopInput {
@@ -225,13 +226,14 @@ const schema = gql`
 	}
 
 	input LoginInput {
-		email: String!
-		id: String!
-		photo: String!
-		familyName: String!
-		givenName: String!
-		name: String!
-		serverAuthCode: String!
+		email: String
+		id: String
+		photo: String
+		familyName: String
+		givenName: String
+		name: String
+		serverAuthCode: String
+		token: String
 	}
 	input AddCard {
 		number: String!
