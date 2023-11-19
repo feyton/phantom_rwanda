@@ -111,23 +111,42 @@ const busStopSchema = new mongoose.Schema({
 
 busStopSchema.index({ location: '2dsphere' }); // Index for geospatial queries
 
-const busParkSchema = new mongoose.Schema({
-	name: {
-		type: String,
-		required: true,
-		unique: true,
-	},
-	details: String,
-	pictures: [String],
-	roads: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Road' }],
-	location: {
-		type: { type: String, enum: ['Point'], default: 'Point' },
-		coordinates: {
-			type: [Number],
+const busParkSchema = new mongoose.Schema(
+	{
+		name: {
+			type: String,
 			required: true,
+			unique: true,
+		},
+		details: String,
+		pictures: [String],
+		roads: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Road' }],
+		location: {
+			type: { type: String, enum: ['Point'], default: 'Point' },
+			coordinates: {
+				type: [Number],
+				required: true,
+			},
 		},
 	},
-});
+	{
+		toJSON: {
+			transform: function (doc, ret) {
+				ret.location = {
+					latitude: ret.location.coordinates[0],
+					longitude: ret.location.coordinates[1],
+				};
+				delete ret._id;
+			},
+		},
+		toObject: {
+			transform: function (doc, ret) {
+				
+				delete ret._id;
+			},
+		},
+	}
+);
 
 busParkSchema.index({ location: '2dsphere' }); // Index for geospatial queries
 

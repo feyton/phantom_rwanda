@@ -72,7 +72,8 @@ const resolvers = {
 		},
 		getBusParks: async () => {
 			try {
-				const busParks = await BusPark.find();
+				const busParks = await BusPark.find({});
+				console.log(busParks[0]);
 				return busParks;
 			} catch (error) {
 				throw new Error('Error fetching BusParks: ' + error.message);
@@ -166,7 +167,7 @@ const resolvers = {
 				park2: input.park2,
 				stops: input.busStopIds,
 				fare: input.fare,
-				details: input.details
+				details: input.details,
 			});
 
 			try {
@@ -182,7 +183,7 @@ const resolvers = {
 		},
 
 		createBusStop: async (_, { input }) => {
-			console.log(input)
+			console.log(input);
 			const newBusStop = new BusStop({
 				name: input.name,
 				location: {
@@ -419,6 +420,22 @@ const resolvers = {
 		cards: async (parent, args, context) => {
 			const cards = await BusCard.find({ user: parent.id });
 			return cards;
+		},
+	},
+	BusPark: {
+		location: (parent, args) => {
+			return {
+				latitude: parent.location.coordinates[0],
+				longitude: parent.location.coordinates[1],
+			};
+		},
+	},
+	BusStop: {
+		location: (parent, args) => {
+			return {
+				latitude: parent.location.coordinates[0],
+				longitude: parent.location.coordinates[1],
+			};
 		},
 	},
 };
