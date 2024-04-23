@@ -42,6 +42,8 @@ services:
       - mongo_db:/data/db
     networks:
       - phantom
+    logging:
+      driver: none
   
   redis:
     image: redis/redis-stack-server:latest
@@ -50,9 +52,11 @@ services:
     restart: always
     networks:
       - phantom
+    logging:
+      driver: none
   
   postgres:
-    image: postgres:14
+    image: postgres:latest
     restart: always
     environment:
       POSTGRES_USER: phantom
@@ -65,10 +69,12 @@ services:
     networks:
       - phantom
     healthcheck:
-      test: ["pg_isready"]
+      test: ["CMD-SHELL","pg_isready"]
       interval: 10s
       timeout: 5s
       retries: 5
+    logging:
+      driver: none
   nginx:
     depends_on:
       - server 
@@ -81,6 +87,8 @@ services:
       - 8000:80
     networks:
       - phantom
+    logging:
+      driver: none
 volumes:
   mongo_db: {}
   postgres: {}

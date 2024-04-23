@@ -18,11 +18,11 @@ import { AppDataSource } from './data-source.js';
 import { context } from './gql/context.js';
 import resolvers from './gql/resolvers.js';
 import typeDefs from './gql/schema.js';
+import { jwtMiddleWare } from './middlewares/authJwt.js';
 import apiRouter from './routes/apiRouter.js';
 import { BusRepository } from './simulateApp/models.js';
 import Trip from './tripApp/models.js';
 import errLogger from './utils/errorLogger.js';
-import { jwtMiddleWare } from './middlewares/authJwt.js';
 
 const swaggerSpec = swaggerJSDoc(options);
 const __dirname = path.resolve();
@@ -39,9 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.urlencoded({ extended: true }));
 app.use(i18n.init);
-app.use(
-	jwtMiddleWare
-);
+app.use(jwtMiddleWare);
 
 app.use('/api/v1', apiRouter);
 
@@ -186,7 +184,7 @@ AppDataSource.initialize()
 		connect
 			.then(() => {
 				logger.info('Postgres database connected');
-				app.listen({ port: PORT,  }, () => {
+				app.listen({ port: PORT }, () => {
 					app.emit('started');
 					logger.info(`app is listening on port ${PORT}`);
 				});
@@ -201,7 +199,7 @@ AppDataSource.initialize()
 		// eslint-disable-next-line no-console
 		console.log(_error);
 		logger.error(
-			"The server couldn't be started. The database is not connected"
+			"The server couldn't be started. The psql database is not connected"
 		);
 	});
 
