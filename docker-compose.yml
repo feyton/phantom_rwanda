@@ -1,0 +1,90 @@
+services:
+  server:
+    build: 
+      context: './server'
+      dockerfile: Dockerfile 
+    command: yarn dev 
+    ports:
+      - 5000:5000
+    volumes:
+      - /app/node_modules
+      - ./server:/app
+    depends_on:
+      - mongo 
+      - postgres
+      - redis
+    networks:
+      - phantom
+    env_file:
+      - ./server/.env
+  
+  client:
+    build: 
+      context: ./client
+      dockerfile: Dockerfile
+    stdin_open: true
+    ports:
+      - 3000:3000
+    volumes:
+      - /app/node_modules 
+      - ./client:/app
+    networks:
+      - phantom
+    env_file:
+      - ./client/.env
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    restart: always
+    volumes:
+      - mongo_db:/data/db
+    networks:
+      - phantom
+  
+  redis:
+    image: redis/redis-stack-server:latest
+    ports:
+      - 6379:6379
+    restart: always
+    networks:
+      - phantom
+  
+  postgres:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_USER: phantom
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: phantom
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    networks:
+      - phantom
+    healthcheck:
+      test: ["pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  nginx:
+    depends_on:
+      - server 
+      - client 
+    restart: always 
+    build:
+      context: ./nginx 
+      dockerfile: Dockerfile
+    ports:
+      - 8000:80
+    networks:
+      - phantom
+volumes:
+  mongo_db: {}
+  postgres: {}
+
+networks:
+  phantom:
+    driver: bridge
