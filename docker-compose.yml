@@ -3,7 +3,7 @@ services:
     build: 
       context: './server'
       dockerfile: Dockerfile 
-    command: yarn dev 
+    command: yarn run dev 
     ports:
       - 5000:5000
     volumes:
@@ -25,9 +25,12 @@ services:
     stdin_open: true
     ports:
       - 3000:3000
-    volumes:
-      - /app/node_modules 
-      - ./client:/app
+    volumes: 
+      - /app/node_modules
+      - type: bind
+        source: ./client
+        target: /app
+    working_dir: /app
     networks:
       - phantom
     env_file:
@@ -42,8 +45,7 @@ services:
       - mongo_db:/data/db
     networks:
       - phantom
-    logging:
-      driver: none
+    attach: false
   
   redis:
     image: redis/redis-stack-server:latest
@@ -52,8 +54,7 @@ services:
     restart: always
     networks:
       - phantom
-    logging:
-      driver: none
+    attach: false
   
   postgres:
     image: postgres:latest
@@ -73,8 +74,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-    logging:
-      driver: none
+    attach: false
   nginx:
     depends_on:
       - server 
@@ -87,8 +87,7 @@ services:
       - 8000:80
     networks:
       - phantom
-    logging:
-      driver: none
+    attach: false
 volumes:
   mongo_db: {}
   postgres: {}

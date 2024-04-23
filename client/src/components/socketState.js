@@ -12,6 +12,7 @@ import './socket.css';
 function SocketState() {
   let dispatch = useDispatch();
   const { active, connected, error } = useSelector((state) => state?.socket);
+  console.log(error)
 
   useEffect(() => {
     socket.on('connect', () => {
@@ -32,7 +33,7 @@ function SocketState() {
       className={
         connected ? 'socket-state connected' : 'socket-state disconnected'
       }
-    ></div>
+    />
   );
 }
 

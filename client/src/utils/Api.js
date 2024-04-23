@@ -3,7 +3,8 @@ import axios from 'axios';
 import getLanguage from './getLanguage.js';
 
 const host = `${window.location.protocol}//${window.location.host}`;
-let base = '';
+const base =
+  process.env.SERVER_URL !== undefined ? process.env.SERVER_URL : host;
 
 const axiosBase = axios.create({
   baseURL: `${base}/api/v1`,
@@ -39,6 +40,7 @@ const refreshToken = async () => {
       localStorage.setItem('token', response.data.data.access_token);
       return response.data.data.access_token;
     }
+    return response;
   } catch (error) {
     if (error?.response?.status === 400) {
       localStorage.removeItem('auth');

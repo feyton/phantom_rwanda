@@ -1,5 +1,7 @@
+// eslint-disable-next-line import/no-named-as-default
 import DateParser from './DateParser.js';
 
+// eslint-disable-next-line no-restricted-globals
 const link = `${location.protocol}//${location.host}`;
 
 const renderToString = (data, template = 'location') => {
@@ -42,14 +44,11 @@ const renderToString = (data, template = 'location') => {
         <div>Updated: <b>${DateParser(new Date())}</b></div>
     </div>
         `;
-  const live = `
-    
-    
-    `;
+  // const live = ;
   if (template === 'finished') {
     return finished;
-  } else if (template === 'live') {
   }
+
   return div;
 };
 

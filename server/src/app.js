@@ -79,6 +79,7 @@ const io = new Server(server, {
 const onlineClients = new Set();
 
 io.on('connection', (socket) => {
+	console.log(socket);
 	const sendSize = (room) => {
 		const size = io.sockets.adapter.rooms.get(room)?.size;
 		if (size) {
