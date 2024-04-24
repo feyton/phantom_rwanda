@@ -149,7 +149,7 @@ const Login = () => {
               htmlFor="email"
               className="capitalize mb-2 font-semibold required"
             >
-              Password ffhf:
+              Password:
             </label>
             <input
               type={passwordShown ? 'text' : 'password'}

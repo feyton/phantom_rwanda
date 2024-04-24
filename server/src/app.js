@@ -3,6 +3,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import 'dotenv/config';
 import express from 'express';
+import { createServer } from 'http';
 import path from 'path';
 import { Server } from 'socket.io';
 import swaggerJSDoc from 'swagger-jsdoc';
@@ -31,6 +32,27 @@ const __dirname = path.resolve();
 const PORT = process.env.PORT || 5000;
 /* c8 ignore next stop */
 const app = express();
+const httpServer = createServer(app)
+const apolloServer = new ApolloServer({
+	typeDefs,
+	resolvers,
+	introspection: true,
+	cache: 'bounded',
+	context,
+});
+
+apolloServer.start().then(()=>{
+	apolloServer.applyMiddleware({app})
+})
+const io = new Server(httpServer,  {
+	cors: {
+		origin: '*',
+		methods: ['GET', 'POST'],
+		transports: ['websocket', 'polling'],
+		credentials: true,
+	},
+	allowEIO3: true,
+})
 app.use(express.json({ limit: '30mb', extended: true }));
 app.use(cors(corsOptions));
 app.use(reqLogger);
@@ -59,27 +81,13 @@ app.get('*', (req, res) => {
 
 app.use(errLogger);
 
-const server = new ApolloServer({
-	typeDefs,
-	resolvers,
-	introspection: true,
-	cache: 'bounded',
-	context,
-});
-
-const io = new Server(server, {
-	cors: {
-		origin: '*',
-		methods: ['GET', 'POST'],
-		transports: ['websocket', 'polling'],
-		credentials: true,
-	},
-	allowEIO3: true,
-});
 const onlineClients = new Set();
 
+io.on('connect_error', (error) => {
+    console.error('Socket.IO connection error:', error);
+});
+
 io.on('connection', (socket) => {
-	console.log(socket);
 	const sendSize = (room) => {
 		const size = io.sockets.adapter.rooms.get(room)?.size;
 		if (size) {
@@ -174,19 +182,14 @@ io.on('connection', (socket) => {
 	});
 });
 
-// SETUP SOCKET
-server.start().then(() => {
-	server.applyMiddleware({ app });
-});
-
 // TODO REFACTORING
 AppDataSource.initialize()
 	.then(async () => {
 		connect
 			.then(() => {
 				logger.info('Postgres database connected');
-				app.listen({ port: PORT }, () => {
-					app.emit('started');
+				httpServer.listen({ port: PORT }, () => {
+					httpServer.emit('started');
 					logger.info(`app is listening on port ${PORT}`);
 				});
 			})
@@ -197,11 +200,10 @@ AppDataSource.initialize()
 	})
 	.catch((_error) => {
 		/* c8 ignore next 6 */
-		// eslint-disable-next-line no-console
-		console.log(_error);
+		logger.error(_error);
 		logger.error(
 			"The server couldn't be started. The psql database is not connected"
 		);
 	});
 
-export default server;
+export default httpServer;
